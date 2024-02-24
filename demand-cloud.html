@@ -1,0 +1,4403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>GPU Cloud - VMs for Deep Learning | Lambda</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="description"
+    content="NVIDIA H100, A100, RTX A6000, Tesla V100, and Quadro RTX 6000 GPU instances. Train the most demanding AI, ML, and Deep Learning models.">
+
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script type="text/javascript" async="" src="https://widget.intercom.io/widget/ahj4606e"></script>
+  <script async="" src="js/gtm.js"></script>
+  <script async="" src="js/gtm.js"></script>
+  <script src="js/jquery-1.11.2.js"></script>
+  <script>hsjQuery = window['jQuery'];</script>
+  <meta property="og:description"
+    content="NVIDIA H100, A100, RTX A6000, Tesla V100, and Quadro RTX 6000 GPU instances. Train the most demanding AI, ML, and Deep Learning models.">
+  <meta property="og:title" content="GPU Cloud - VMs for Deep Learning | Lambda">
+  <meta name="twitter:description"
+    content="NVIDIA H100, A100, RTX A6000, Tesla V100, and Quadro RTX 6000 GPU instances. Train the most demanding AI, ML, and Deep Learning models.">
+  <meta name="twitter:title" content="GPU Cloud - VMs for Deep Learning | Lambda">
+
+
+
+
+  <style>
+    a.cta_button {
+      -moz-box-sizing: content-box !important;
+      -webkit-box-sizing: content-box !important;
+      box-sizing: content-box !important;
+      vertical-align: middle
+    }
+
+    .hs-breadcrumb-menu {
+      list-style-type: none;
+      margin: 0px 0px 0px 0px;
+      padding: 0px 0px 0px 0px
+    }
+
+    .hs-breadcrumb-menu-item {
+      float: left;
+      padding: 10px 0px 10px 10px
+    }
+
+    .hs-breadcrumb-menu-divider:before {
+      content: '›';
+      padding-left: 10px
+    }
+
+    .hs-featured-image-link {
+      border: 0
+    }
+
+    .hs-featured-image {
+      float: right;
+      margin: 0 0 20px 20px;
+      max-width: 50%
+    }
+
+    @media (max-width: 568px) {
+      .hs-featured-image {
+        float: none;
+        margin: 0;
+        width: 100%;
+        max-width: 100%
+      }
+    }
+
+    .hs-screen-reader-text {
+      clip: rect(1px, 1px, 1px, 1px);
+      height: 1px;
+      overflow: hidden;
+      position: absolute !important;
+      width: 1px
+    }
+  </style>
+
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/theme-overrides.min.css">
+  <link rel="stylesheet" href="css/lambda.min.css">
+  <link rel="stylesheet" href="css/module_81538930519_banner_bar.min.css">
+  <link rel="stylesheet" href="css/module_81423666946_website_header.min.css">
+  <link rel="stylesheet" href="css/subnav.min.css">
+  <link rel="stylesheet" href="css/module_84948148749_website_subnav_gpu_cloud.min.css">
+
+  <style>
+    #hs_cos_wrapper_widget_1663176311991 .menu .menu__submenu {}
+
+    @media (min-width:767px) {
+      #hs_cos_wrapper_widget_1663176311991 .menu__submenu--level-2>.menu__item:first-child:before {}
+    }
+
+    #hs_cos_wrapper_widget_1663176311991 .menu__submenu .menu__link,
+    #hs_cos_wrapper_widget_1663176311991 .menu__submenu .menu__link:hover,
+    #hs_cos_wrapper_widget_1663176311991 .menu__submenu .menu__link:focus {}
+
+    #hs_cos_wrapper_widget_1663176311991 .menu__submenu .menu__child-toggle-icon,
+    #hs_cos_wrapper_widget_1663176311991 .menu__submenu .menu__child-toggle-icon:hover,
+    #hs_cos_wrapper_widget_1663176311991 .menu__submenu .menu__child-toggle-icon:focus {}
+  </style>
+
+  <link rel="stylesheet" href="css/module_81427583254_Text_and_Image.min.css">
+  <link rel="stylesheet" href="css/module_81426901021_divider_section.min.css">
+  <link rel="stylesheet" href="css/module_81423707231_logo_scroller.min.css">
+  <link rel="stylesheet" href="css/module_81426799201_buttons.min.css">
+
+  <style>
+    #hs_cos_wrapper_widget_1700501392955 .button-wrapper {}
+
+    #hs_cos_wrapper_widget_1700501392955 .button {}
+
+    #hs_cos_wrapper_widget_1700501392955 .button:hover,
+    #hs_cos_wrapper_widget_1700501392955 .button:focus {}
+
+    #hs_cos_wrapper_widget_1700501392955 .button:active {}
+  </style>
+
+  <link rel="stylesheet" href="css/module_89406381601_Tables.min.css">
+  <link rel="stylesheet" href="css/module_84912784420_pricting_table_on_demand_global.min.css">
+
+  <style>
+    #hs_cos_wrapper_widget_1661799328980 .button-wrapper {}
+
+    #hs_cos_wrapper_widget_1661799328980 .button {}
+
+    #hs_cos_wrapper_widget_1661799328980 .button:hover,
+    #hs_cos_wrapper_widget_1661799328980 .button:focus {}
+
+    #hs_cos_wrapper_widget_1661799328980 .button:active {}
+  </style>
+
+
+  <style>
+    #hs_cos_wrapper_module_1661799372317 .button-wrapper {}
+
+    #hs_cos_wrapper_module_1661799372317 .button {}
+
+    #hs_cos_wrapper_module_1661799372317 .button:hover,
+    #hs_cos_wrapper_module_1661799372317 .button:focus {}
+
+    #hs_cos_wrapper_module_1661799372317 .button:active {}
+  </style>
+
+  <link rel="stylesheet" href="css/module_81423557658_social_follow.min.css">
+
+  <style>
+    #hs_cos_wrapper_social_icons .social-links {}
+
+    #hs_cos_wrapper_social_icons .social-links__link {}
+
+    #hs_cos_wrapper_social_icons .social-links__icon {
+      background-color: rgba(250, 250, 250, 1.0);
+    }
+
+    #hs_cos_wrapper_social_icons .social-links__icon svg {
+      fill: #171717;
+      height: 24px;
+      width: 24px;
+    }
+
+    #hs_cos_wrapper_social_icons .social-links__icon:hover,
+    #hs_cos_wrapper_social_icons .social-links__icon:focus {
+      background-color: rgba(170, 170, 170, 1.0);
+    }
+
+    #hs_cos_wrapper_social_icons .social-links__icon:active {
+      background-color: rgba(255, 255, 255, 1.0);
+    }
+  </style>
+
+  <link rel="stylesheet" href="css/module_81424021549_footer_menu.min.css">
+
+  <style>
+    #hs_cos_wrapper_footer_menu_stub .menu .menu__submenu {}
+
+    @media (min-width:767px) {
+      #hs_cos_wrapper_footer_menu_stub .menu__submenu--level-2>.menu__item:first-child:before {}
+    }
+
+    #hs_cos_wrapper_footer_menu_stub .menu__submenu .menu__link,
+    #hs_cos_wrapper_footer_menu_stub .menu__submenu .menu__link:hover,
+    #hs_cos_wrapper_footer_menu_stub .menu__submenu .menu__link:focus {}
+
+    #hs_cos_wrapper_footer_menu_stub .menu__submenu .menu__child-toggle-icon,
+    #hs_cos_wrapper_footer_menu_stub .menu__submenu .menu__child-toggle-icon:hover,
+    #hs_cos_wrapper_footer_menu_stub .menu__submenu .menu__child-toggle-icon:focus {}
+  </style>
+
+  <style>
+    @font-face {
+      font-family: "Lato";
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+      src: url("fonts/regular.woff2") format("woff2"), url("fonts/regular.woff") format("woff");
+    }
+
+    @font-face {
+      font-family: "Lato";
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+      src: url("fonts/700.woff2") format("woff2"), url("fonts/700.woff") format("woff");
+    }
+  </style>
+
+  <!-- Editor Styles -->
+  <style id="hs_editor_style" type="text/css">
+    #hs_cos_wrapper_widget_1700501287830 {
+      display: block !important;
+      padding-bottom: 30px !important;
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+      padding-top: 30px !important
+    }
+
+    #hs_cos_wrapper_widget_1700501287830 {
+      display: block !important;
+      padding-bottom: 30px !important;
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+      padding-top: 30px !important
+    }
+
+    .header-row-0-force-full-width-section>.row-fluid {
+      max-width: none !important;
+    }
+
+    .header-row-1-max-width-section-centering>.row-fluid {
+      max-width: 1440px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    .dnd_area-row-0-force-full-width-section>.row-fluid {
+      max-width: none !important;
+    }
+
+    .dnd_area-row-3-force-full-width-section>.row-fluid {
+      max-width: none !important;
+    }
+
+    .dnd_area-row-7-force-full-width-section>.row-fluid {
+      max-width: none !important;
+    }
+
+    .dnd_area-row-9-force-full-width-section>.row-fluid {
+      max-width: none !important;
+    }
+
+    .dnd_area-row-11-force-full-width-section>.row-fluid {
+      max-width: none !important;
+    }
+
+    .dnd_area-row-13-force-full-width-section>.row-fluid {
+      max-width: none !important;
+    }
+
+    .dnd_area-row-15-force-full-width-section>.row-fluid {
+      max-width: none !important;
+    }
+
+    .dnd_area-row-17-force-full-width-section>.row-fluid {
+      max-width: none !important;
+    }
+
+    .dnd_area-row-19-force-full-width-section>.row-fluid {
+      max-width: none !important;
+    }
+
+    .module_17005082724895-flexbox-positioning {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-align: center !important;
+      -ms-flex-pack: start;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: flex-start;
+    }
+
+    .module_17005082724895-flexbox-positioning>div {
+      max-width: 100%;
+      flex-shrink: 0 !important;
+    }
+
+    .widget_1700501287830-flexbox-positioning {
+      display: -ms-flexbox !important;
+      -ms-flex-direction: column !important;
+      -ms-flex-align: center !important;
+      -ms-flex-pack: start;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: flex-start;
+    }
+
+    .widget_1700501287830-flexbox-positioning>div {
+      max-width: 100%;
+      flex-shrink: 0 !important;
+    }
+
+    /* HubSpot Non-stacked Media Query Styles */
+    @media (min-width:768px) {
+      .dnd_area-row-8-vertical-alignment>.row-fluid {
+        display: -ms-flexbox !important;
+        -ms-flex-direction: row;
+        display: flex !important;
+        flex-direction: row;
+      }
+
+      .dnd_area-row-10-vertical-alignment>.row-fluid {
+        display: -ms-flexbox !important;
+        -ms-flex-direction: row;
+        display: flex !important;
+        flex-direction: row;
+      }
+
+      .dnd_area-row-12-vertical-alignment>.row-fluid {
+        display: -ms-flexbox !important;
+        -ms-flex-direction: row;
+        display: flex !important;
+        flex-direction: row;
+      }
+
+      .dnd_area-row-14-vertical-alignment>.row-fluid {
+        display: -ms-flexbox !important;
+        -ms-flex-direction: row;
+        display: flex !important;
+        flex-direction: row;
+      }
+
+      .cell_17005082724893-vertical-alignment {
+        display: -ms-flexbox !important;
+        -ms-flex-direction: column !important;
+        -ms-flex-pack: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+      }
+
+      .cell_17005082724893-vertical-alignment>div {
+        flex-shrink: 0 !important;
+      }
+
+      .cell_17005082724892-vertical-alignment {
+        display: -ms-flexbox !important;
+        -ms-flex-direction: column !important;
+        -ms-flex-pack: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+      }
+
+      .cell_17005082724892-vertical-alignment>div {
+        flex-shrink: 0 !important;
+      }
+
+      .cell_16614428351572-vertical-alignment {
+        display: -ms-flexbox !important;
+        -ms-flex-direction: column !important;
+        -ms-flex-pack: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+      }
+
+      .cell_16614428351572-vertical-alignment>div {
+        flex-shrink: 0 !important;
+      }
+
+      .cell_17005012419832-vertical-alignment {
+        display: -ms-flexbox !important;
+        -ms-flex-direction: column !important;
+        -ms-flex-pack: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+      }
+
+      .cell_17005012419832-vertical-alignment>div {
+        flex-shrink: 0 !important;
+      }
+
+      .cell_1700501287924-vertical-alignment {
+        display: -ms-flexbox !important;
+        -ms-flex-direction: column !important;
+        -ms-flex-pack: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+      }
+
+      .cell_1700501287924-vertical-alignment>div {
+        flex-shrink: 0 !important;
+      }
+
+      .cell_17005010797543-vertical-alignment {
+        display: -ms-flexbox !important;
+        -ms-flex-direction: column !important;
+        -ms-flex-pack: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+      }
+
+      .cell_17005010797543-vertical-alignment>div {
+        flex-shrink: 0 !important;
+      }
+
+      .cell_17005010797542-vertical-alignment {
+        display: -ms-flexbox !important;
+        -ms-flex-direction: column !important;
+        -ms-flex-pack: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+      }
+
+      .cell_17005010797542-vertical-alignment>div {
+        flex-shrink: 0 !important;
+      }
+    }
+
+    /* HubSpot Styles (default) */
+    .header-row-1-margin {
+      margin-bottom: 0px !important;
+    }
+
+    .header-row-1-padding {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+      padding-left: 32px !important;
+      padding-right: 32px !important;
+    }
+
+    .cell_1663352731469-padding {
+      padding-top: px !important;
+      padding-bottom: px !important;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+
+    .dnd_area-row-0-padding {
+      padding-top: 10px !important;
+      padding-bottom: 0px !important;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+
+    .dnd_area-row-1-padding {
+      padding-bottom: 0px !important;
+    }
+
+    .dnd_area-row-3-padding {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+      padding-left: 17px !important;
+      padding-right: 17px !important;
+    }
+
+    .dnd_area-row-4-padding {
+      padding-bottom: 40px !important;
+    }
+
+    .dnd_area-row-5-padding {
+      padding-top: 40px !important;
+      padding-bottom: 0px !important;
+    }
+
+    .dnd_area-row-6-padding {
+      padding-top: 0px !important;
+    }
+
+    .dnd_area-row-7-padding {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+      padding-left: 17px !important;
+      padding-right: 17px !important;
+    }
+
+    .dnd_area-row-8-padding {
+      padding-left: 17px !important;
+    }
+
+    .dnd_area-row-9-padding {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+      padding-left: 17px !important;
+      padding-right: 17px !important;
+    }
+
+    .dnd_area-row-11-padding {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+      padding-left: 17px !important;
+      padding-right: 17px !important;
+    }
+
+    .dnd_area-row-13-padding {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+      padding-left: 17px !important;
+      padding-right: 17px !important;
+    }
+
+    .dnd_area-row-15-padding {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+      padding-left: 17px !important;
+      padding-right: 17px !important;
+    }
+
+    .dnd_area-row-17-padding {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+      padding-left: 17px !important;
+      padding-right: 17px !important;
+    }
+
+    .dnd_area-row-18-padding {
+      padding-bottom: 80px !important;
+    }
+
+    .dnd_area-row-19-padding {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+      padding-left: 17px !important;
+      padding-right: 17px !important;
+    }
+
+    .dnd_area-row-20-padding {
+      padding-bottom: 40px !important;
+    }
+
+    .dnd_area-row-21-padding {
+      padding-top: 40px !important;
+      padding-bottom: 0px !important;
+    }
+
+    .dnd_area-row-22-padding {
+      padding-top: 0px !important;
+    }
+
+    .dnd_area-row-23-padding {
+      padding-top: 15px !important;
+    }
+
+    .dnd_area-row-23-hidden {
+      display: none !important;
+    }
+
+    .cell_16614452706882-padding {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+  </style>
+
+
+
+  <link rel="canonical" href="demand-cloud.html">
+
+  <meta name="google-site-verification" content="Yl9AOUwQUNp73F6qbOEGV8Z-ottfBhEf0Wn0VLsuYKE">
+
+  <script src="js/ffbbf5893e.js" crossorigin="anonymous"></script>
+
+  <!-- APPLE APP ICONS -->
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png">
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NZ5JKG2');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Hotjar Tracking Code for my site -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 3059404, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script async="" src="js/hotjar-3059404.js"></script>
+
+  <meta property="og:image" content="images/Featured%20Images%20-%20Lambda%20On-Demand%20Cloud.png#keepProtocol">
+  <meta property="og:image:width" content="900">
+  <meta property="og:image:height" content="497">
+  <meta property="og:image:alt" content="Lambda on-demand GPU cloud">
+  <meta name="twitter:image"
+    content="https://lambdalabs.com/hubfs/2.%20Images/Images%20-%20Site%20Pages/Images%20-%20GPU%20Cloud%20OD%20Page/Featured%20Images%20-%20Lambda%20On-Demand%20Cloud.png#keepProtocol">
+  <meta name="twitter:image:alt" content="Lambda on-demand GPU cloud">
+
+  <meta property="og:url" content="https://lambdalabs.com/service/gpu-cloud">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta http-equiv="content-language" content="en">
+
+
+
+
+
+
+  <script>
+    $(window).on("scroll", function () {
+      if ($(window).scrollTop() > 50) {
+        $(".header").addClass("active-header");
+      } else {
+        $(".header").removeClass("active-header");
+      }
+    });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NZ5JKG2');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta name="generator" content="HubSpot">
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZ5JKG2" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="body-wrapper   hs-content-id-83011386037 hs-site-page page ">
+
+    <div data-global-resource-path="LambdaLabs/templates/partials/header.html">
+      <header class="header">
+
+        <div class="container-fluid">
+          <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+              <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+
+                <div
+                  class="row-fluid-wrapper row-depth-1 row-number-1 dnd-section header-row-0-force-full-width-section">
+                  <div class="row-fluid ">
+                    <div class="span12 widget-span widget-type-cell cell_1663352731469-padding dnd-column" style=""
+                      data-widget-type="cell" data-x="0" data-w="12">
+
+                      <div class="row-fluid-wrapper row-depth-1 row-number-2 dnd-row">
+                        <div class="row-fluid ">
+                          <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                            data-widget-type="custom_widget" data-x="0" data-w="12">
+                            <div id="hs_cos_wrapper_widget_1660064070220"
+                              class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                              data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                              <div id="banner-h100-test-drive">
+                                Lambda Reserved Cloud is now available with the new NVIDIA GH200 Grace Hopper™
+                                Superchip. <a href="https://lambdalabs.com/nvidia-gh200?hsLang=en">Learn more</a>
+                              </div>
+                            </div>
+
+                          </div><!--end widget-span -->
+                        </div><!--end row-->
+                      </div><!--end row-wrapper -->
+
+                    </div><!--end widget-span -->
+                  </div><!--end row-->
+                </div><!--end row-wrapper -->
+
+                <div
+                  class="row-fluid-wrapper row-depth-1 row-number-3 header-row-1-margin header-row-1-max-width-section-centering dnd-section header-row-1-padding">
+                  <div class="row-fluid ">
+                    <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                      data-widget-type="custom_widget" data-x="0" data-w="12">
+                      <div id="hs_cos_wrapper_header-module-1"
+                        class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                        data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <style>
+                          #hs_cos_wrapper_header-module-1 .header__top {
+                            background-color: rgba(#null, 0.0);
+                          }
+
+                          #hs_cos_wrapper_header-module-1 .header__language-switcher-current-label>span {}
+
+                          #hs_cos_wrapper_header-module-1 .header__language-switcher:hover .header__language-switcher-current-label>span,
+                          #hs_cos_wrapper_header-module-1 .header__language-switcher:focus .header__language-switcher-current-label>span {}
+
+                          #hs_cos_wrapper_header-module-1 .header__language-switcher .lang_list_class a:hover,
+                          #hs_cos_wrapper_header-module-1 .header__language-switcher .lang_list_class a:focus {}
+
+                          #hs_cos_wrapper_header-module-1 .header__language-switcher .lang_list_class a:active {}
+
+                          #hs_cos_wrapper_header-module-1 .header__logo-image {
+                            border-radius: px;
+                          }
+
+                          #hs_cos_wrapper_header-module-1 .header__menu-link {}
+
+                          #hs_cos_wrapper_header-module-1 .header__menu-item--depth-1>.header__menu-link:hover,
+                          #hs_cos_wrapper_header-module-1 .header__menu-item--depth-1>.header__menu-link:focus {}
+
+                          #hs_cos_wrapper_header-module-1 .header__menu-item--depth-1>.header__menu-link:active {}
+
+                          #hs_cos_wrapper_header-module-1 .header__menu-item--depth-1>.header__menu-link--active-link {}
+
+                          #hs_cos_wrapper_header-module-1 .header__menu-submenu .header__menu-link:hover,
+                          #hs_cos_wrapper_header-module-1 .header__menu-submenu .header__menu-link:focus {}
+
+                          #hs_cos_wrapper_header-module-1 .button {
+                            background-color: rgba(#null, 0.0);
+                            border-radius: px;
+                          }
+
+                          #hs_cos_wrapper_header-module-1 .button:hover,
+                          #hs_cos_wrapper_header-module-1 .button:focus {
+                            background-color: rgba(#null, 0.0);
+                          }
+
+                          #hs_cos_wrapper_header-module-1 .button:active {
+                            background-color: rgba(#null, 0.0);
+                          }
+                        </style>
+
+
+
+
+
+
+
+
+
+                        <div class="header__container header__container--left">
+
+
+                          <div class="header__bottom">
+                            <div class="header__wrapper header__wrapper--bottom">
+                              <div class="header__logo-col">
+
+
+
+
+
+
+                                <div class="header__logo">
+
+
+                                  <a class="header__logo-link" href="/?hsLang=en">
+
+
+
+
+
+                                    <!-- 
+                                    <img class="header__logo-image" src="images/lambda-logo.svg" loading="eager"
+                                      alt="lambda logo" height="400" width="400"> -->
+                                    <div class="header__logo-image">
+                                      <h1 class="fonts" style="font-size: 20px;margin: 0px;">
+                                        Gpu10xCloud
+                                      </h1>
+                                    </div>
+
+
+
+
+
+
+                                  </a>
+
+
+                                </div>
+
+
+                              </div>
+                              <div class="header__menu-col">
+
+
+                                <nav class="header__menu header__menu--desktop" aria-label="Desktop navigation">
+                                  <ul class="header__menu-wrapper no-list">
+
+
+
+
+
+
+
+
+                                    <li
+                                      class="header__menu-item header__menu-item--depth-1 header__menu-item--has-submenu hs-skip-lang-url-rewrite">
+                                      <a class="header__menu-link header__menu-link--toggle header__menu-link--active-link"
+                                        href="demand-cloud.html" aria-haspopup="true" aria-expanded="false"
+                                        aria-current="page">Cloud</a>
+
+
+                                      <button class="header__menu-child-toggle no-button" aria-expanded="false">
+                                        <span class="show-for-sr">Show submenu for Cloud</span>
+                                      </button>
+                                      <ul class="header__menu-submenu header__menu-submenu--level-2 no-list">
+                                        <div class="border-slider dark-purple"></div>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  " href="sign-in.html"><span class="left-side"><i
+                                                class="fad fa-fw fa-sign-in" aria-hidden="true"></i></span><span
+                                              class="title">Cloud Sign-In</span></a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  header__menu-link--active-link"
+                                            href="demand-cloud.html" aria-current="page"><span class="left-side"><i
+                                                class="fad fa-fw fa-bolt" aria-hidden="true"></i></span><span
+                                              class="title">On Demand
+                                              Cloud</span></a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  " href="reserved.html"><span class="left-side"><i
+                                                class="fad fa-fw fa-calendar" aria-hidden="true"></i></span><span
+                                              class="title">Reserved
+                                              Cloud</span></a>
+
+                                        </li>
+
+
+                                      </ul>
+
+
+                                    </li>
+
+
+                                    <!-- 
+                                    <li
+                                      class="header__menu-item header__menu-item--depth-1 header__menu-item--has-submenu hs-skip-lang-url-rewrite">
+                                      <a class="header__menu-link header__menu-link--toggle " href=""
+                                        aria-haspopup="true" aria-expanded="false">Datacenter</a>
+
+
+                                      <button class="header__menu-child-toggle no-button" aria-expanded="false">
+                                        <span class="show-for-sr">Show submenu for Datacenter</span>
+                                      </button>
+                                      <ul class="header__menu-submenu header__menu-submenu--level-2 no-list">
+                                        <div class="border-slider dark-purple"></div>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  "><img
+                                              src="images/lambda-echelon-hyperplane-cluster-sm-200px.jpg"
+                                              class="submenu-img" alt="Lambda Echelon GPU Clusters"> <span
+                                              class="sub-desc"><strong>Echelon Clusters</strong>Large scale GPU clusters
+                                              designed for AI. GPUs, storage, and InfiniBand networking.</span></a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  "><img src="images/a100-4x-thumbnail.jpeg"
+                                              class="submenu-img" alt="Lambda Lambda Hyperplane"> <span
+                                              class="sub-desc"><strong>Hyperplane
+                                                Server</strong>NVIDIA Tensor Core GPU server with up to 8x H100 GPUs,
+                                              NVLink, NVSwitch, and InfiniBand.</span></a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  ">
+                                            <img src="images/deep-learning-server-sm.jpeg" class="submenu-img"
+                                              alt="Lambda Scalar server with up to 8x NVIDIA GPUs (PCIe)"> <span
+                                              class="sub-desc"><strong>Scalar Server</strong>PCIe server with up to 8x
+                                              customizable NVIDIA Tensor Core GPUs and dual Xeon or AMD EPYC
+                                              processors.</span></a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  "><img src="images/a-100-thumbnail-2x.png"
+                                              class="submenu-img" alt="Lambda NVIDIA DGX Systems"> <span
+                                              class="sub-desc"><strong>NVIDIA DGX
+                                                Systems</strong> NVIDIA's latest generation of infrastructure for
+                                              enterprise AI.</span></a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  "><img
+                                              src="images/grace-hopper-superchip-thumbnail.png" class="submenu-img"
+                                              alt="NVIDIA GH200 Grace Hopper Superchip"> <span
+                                              class="sub-desc"><strong>NVIDIA GH200</strong>Breakthrough design that
+                                              forms a high-bandwidth connection between the NVIDIA Grace™ CPU and
+                                              Hopper™ GPU.</span></a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  "><img
+                                              src="images/h100-ai-every-scale-single-hgx-bf3-2631633%20%282%29%20%281%29.png"
+                                              class="submenu-img" alt="NVIDIA H100 &amp; H200 Tensor Core GPU (SXM)">
+                                            <span class="sub-desc"><strong>NVIDIA H100 &amp; H200</strong>New,
+                                              next-generation Tensor Core GPUs based on the Hopper
+                                              architecture.</span></a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  "><img src="images/colocation-sm.png"
+                                              class="submenu-img" alt="Lambda GPU Colo Services"> <span
+                                              class="sub-desc"><strong>GPU
+                                                Colocation</strong>Data center colocation for your GPU
+                                              cluster.</span></a>
+
+                                        </li>
+
+
+                                      </ul>
+
+
+                                    </li> -->
+
+
+
+                                    <!-- <li
+                                      class="header__menu-item header__menu-item--depth-1 header__menu-item--has-submenu hs-skip-lang-url-rewrite">
+                                      <a class="header__menu-link header__menu-link--toggle " href=""
+                                        aria-haspopup="true" aria-expanded="false">Desktops</a>
+
+
+                                      <button class="header__menu-child-toggle no-button" aria-expanded="false">
+                                        <span class="show-for-sr">Show submenu for Desktops</span>
+                                      </button>
+                                      <ul class="header__menu-submenu header__menu-submenu--level-2 no-list">
+                                        <div class="border-slider dark-purple"></div>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  "><img src="images/lambda-workstation-nav-sm.jpg"
+                                              class="submenu-img" alt="Lambda GPU Workstations"> <span
+                                              class="sub-desc"><strong>Vector GPU
+                                                Workstation</strong>Lambda's GPU workstation designed for AI. Up to four
+                                              NVIDIA GPUs.</span></a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  "><img src="images/vector-one-4090-nav-sm.jpg"
+                                              class="submenu-img" alt="Lambda Vector One 4090 GPU"> <span
+                                              class="sub-desc"><strong>Vector
+                                                One GPU Desktop</strong>Lambda's single GPU desktop. Configured with a
+                                              single NVIDIA RTX 4090.</span></a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  "><img src="images/laptop-nav-sm.jpeg"
+                                              class="submenu-img" alt="The Tensorbook, Lambda's GPU Laptop"> <span
+                                              class="sub-desc"><strong>Tensorbook GPU Laptop</strong>Lambda's portable
+                                              GPU laptop. Beautifully designed in white aluminum by RAZER.</span></a>
+
+                                        </li>
+
+
+                                      </ul>
+
+
+                                    </li> -->
+
+
+
+                                    <!-- <li
+                                      class="header__menu-item header__menu-item--depth-1 header__menu-item--has-submenu hs-skip-lang-url-rewrite">
+                                      <a class="header__menu-link header__menu-link--toggle " href=""
+                                        aria-haspopup="true" aria-expanded="false">Company</a>
+
+
+                                      <button class="header__menu-child-toggle no-button" aria-expanded="false">
+                                        <span class="show-for-sr">Show submenu for Company</span>
+                                      </button>
+                                      <ul class="header__menu-submenu header__menu-submenu--level-2 no-list">
+                                        <div class="border-slider dark-purple"></div>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  ">About</a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  ">Careers</a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  ">Professional
+                                            Services</a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  ">Partners</a>
+
+                                        </li>
+
+
+                                      </ul>
+
+
+                                    </li> -->
+
+
+
+                                    <!-- <li
+                                      class="header__menu-item header__menu-item--depth-1 header__menu-item--has-submenu hs-skip-lang-url-rewrite">
+                                      <a class="header__menu-link header__menu-link--toggle " href=""
+                                        aria-haspopup="true" aria-expanded="false">Resources</a>
+
+
+                                      <button class="header__menu-child-toggle no-button" aria-expanded="false">
+                                        <span class="show-for-sr">Show submenu for Resources</span>
+                                      </button>
+                                      <ul class="header__menu-submenu header__menu-submenu--level-2 no-list">
+                                        <div class="border-slider dark-purple"></div>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  "><span class="left-side"><i
+                                                class="fad fa-fw fa-chart-bar" aria-hidden="true"></i></span><span
+                                              class="title">GPU Benchmarks</span></a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  "><span class="left-side"><i
+                                                class="fad fa-fw fa-blog" aria-hidden="true"></i></span><span
+                                              class="title">Blog</span></a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  "><span class="left-side"><i
+                                                class="fad fa-fw fa-layer-group" aria-hidden="true"></i></span><span
+                                              class="title">Lambda
+                                              Stack</span></a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  "><span class="left-side"><i
+                                                class="fad fa-fw fa-book" aria-hidden="true"></i></span><span
+                                              class="title">Documentation</span></a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  "><span class="left-side"><i
+                                                class="fad fa-fw fa-users" aria-hidden="true"></i></span><span
+                                              class="title">Forum</span></a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  "><span class="left-side"><i
+                                                class="fad fa-fw fa-flask" aria-hidden="true"></i></span><span
+                                              class="title">Research</span></a>
+
+                                        </li>
+
+
+
+                                        <li
+                                          class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                          <a class="header__menu-link  "><span class="left-side"><i
+                                                class="fad fa-user-headset" aria-hidden="true"></i></span><span
+                                              class="title">Technical
+                                              Support</span></a>
+
+                                        </li>
+
+
+                                      </ul>
+
+
+                                    </li> -->
+
+
+                                    <!-- 
+                                    <li class="header__menu-item header__menu-item--depth-1  hs-skip-lang-url-rewrite">
+                                      <a class="header__menu-link  "><i class="fad fa-cart-plus"
+                                          aria-hidden="true"></i></a>
+
+                                    </li> -->
+
+
+
+
+                                  </ul>
+                                </nav>
+
+
+
+
+                                <div class="header__menu-container header__menu-container--mobile">
+                                  <button
+                                    class="header__menu-toggle header__menu-toggle--open header__menu-toggle--show no-button">
+                                    <span class="show-for-sr">Open main navigation</span>
+                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                      width="24" aria-hidden="true">
+                                      <g id="bars1_layer">
+                                        <path
+                                          d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                                        </path>
+                                      </g>
+                                    </svg>
+                                  </button>
+                                  <button class="header__menu-toggle header__menu-toggle--close no-button">
+                                    <span class="show-for-sr">Close main navigation</span>
+                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                                      width="24" aria-hidden="true">
+                                      <g id="times2_layer">
+                                        <path
+                                          d="M323.1 441l53.9-53.9c9.4-9.4 9.4-24.5 0-33.9L279.8 256l97.2-97.2c9.4-9.4 9.4-24.5 0-33.9L323.1 71c-9.4-9.4-24.5-9.4-33.9 0L192 168.2 94.8 71c-9.4-9.4-24.5-9.4-33.9 0L7 124.9c-9.4 9.4-9.4 24.5 0 33.9l97.2 97.2L7 353.2c-9.4 9.4-9.4 24.5 0 33.9L60.9 441c9.4 9.4 24.5 9.4 33.9 0l97.2-97.2 97.2 97.2c9.3 9.3 24.5 9.3 33.9 0z">
+                                        </path>
+                                      </g>
+                                    </svg>
+                                  </button>
+                                  <nav class="header__menu header__menu--mobile" aria-label="Mobile navigation">
+                                    <ul class="header__menu-wrapper no-list">
+
+
+
+
+
+
+
+
+                                      <li
+                                        class="header__menu-item header__menu-item--depth-1 header__menu-item--has-submenu hs-skip-lang-url-rewrite">
+                                        <a class="header__menu-link header__menu-link--toggle " href=""
+                                          aria-haspopup="true" aria-expanded="false">Cloud</a>
+
+
+                                        <button class="header__menu-child-toggle no-button" aria-expanded="false">
+                                          <span class="show-for-sr">Show submenu for Cloud</span>
+                                        </button>
+                                        <ul class="header__menu-submenu header__menu-submenu--level-2 no-list">
+                                          <div class="border-slider dark-purple"></div>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  " href="sign-in.html">Cloud Sign-In</a>
+
+                                          </li>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  header__menu-link--active-link"
+                                              href="demand-cloud.html" aria-current="page">On-Demand Cloud</a>
+
+                                          </li>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  " href="reserved.html">Reserved
+                                              Cloud</a>
+
+                                          </li>
+
+
+                                        </ul>
+
+
+                                      </li>
+
+
+
+                                      <!-- <li
+                                        class="header__menu-item header__menu-item--depth-1 header__menu-item--has-submenu hs-skip-lang-url-rewrite">
+                                        <a class="header__menu-link header__menu-link--toggle " href=""
+                                          aria-haspopup="true" aria-expanded="false">Datacenter</a>
+
+
+                                        <button class="header__menu-child-toggle no-button" aria-expanded="false">
+                                          <span class="show-for-sr">Show submenu for Datacenter</span>
+                                        </button>
+                                        <ul class="header__menu-submenu header__menu-submenu--level-2 no-list">
+                                          <div class="border-slider dark-purple"></div>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">Echelon Clusters</a>
+
+                                          </li>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">Hyperplane
+                                              Server</a>
+
+                                          </li>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">NVIDIA DGX Systems</a>
+
+                                          </li>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">Scalar Server</a>
+
+                                          </li>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">Colocation</a>
+
+                                          </li>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">NVIDIA GH200</a>
+
+                                          </li>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">NVIDIA H100
+                                              &amp; H200</a>
+
+                                          </li>
+
+
+                                        </ul>
+
+
+                                      </li>
+
+
+
+                                      <li
+                                        class="header__menu-item header__menu-item--depth-1 header__menu-item--has-submenu hs-skip-lang-url-rewrite">
+                                        <a class="header__menu-link header__menu-link--toggle " href=""
+                                          aria-haspopup="true" aria-expanded="false">Desktops</a>
+
+
+                                        <button class="header__menu-child-toggle no-button" aria-expanded="false">
+                                          <span class="show-for-sr">Show submenu for Desktops</span>
+                                        </button>
+                                        <ul class="header__menu-submenu header__menu-submenu--level-2 no-list">
+                                          <div class="border-slider dark-purple"></div>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">Vector
+                                              Workstation</a>
+
+                                          </li>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">Vector One
+                                              Desktop</a>
+
+                                          </li>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">Tensorbook
+                                              Laptops</a>
+
+                                          </li>
+
+
+                                        </ul>
+
+
+                                      </li>
+
+
+
+                                      <li
+                                        class="header__menu-item header__menu-item--depth-1 header__menu-item--has-submenu hs-skip-lang-url-rewrite">
+                                        <a class="header__menu-link header__menu-link--toggle " href=""
+                                          aria-haspopup="true" aria-expanded="false">Company</a>
+
+
+                                        <button class="header__menu-child-toggle no-button" aria-expanded="false">
+                                          <span class="show-for-sr">Show submenu for Company</span>
+                                        </button>
+                                        <ul class="header__menu-submenu header__menu-submenu--level-2 no-list">
+                                          <div class="border-slider dark-purple"></div>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">About</a>
+
+                                          </li>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">Careers</a>
+
+                                          </li>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">Professional
+                                              Services</a>
+
+                                          </li>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">Partners</a>
+
+                                          </li>
+
+
+                                        </ul>
+
+
+                                      </li>
+
+
+
+                                      <li
+                                        class="header__menu-item header__menu-item--depth-1 header__menu-item--has-submenu hs-skip-lang-url-rewrite">
+                                        <a class="header__menu-link header__menu-link--toggle " href=""
+                                          aria-haspopup="true" aria-expanded="false">Resources</a>
+
+
+                                        <button class="header__menu-child-toggle no-button" aria-expanded="false">
+                                          <span class="show-for-sr">Show submenu for Resources</span>
+                                        </button>
+                                        <ul class="header__menu-submenu header__menu-submenu--level-2 no-list">
+                                          <div class="border-slider dark-purple"></div>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">GPU Benchmarks</a>
+
+                                          </li>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">Blog</a>
+
+                                          </li>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">Lambda
+                                              Stack</a>
+
+                                          </li>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">Documentation</a>
+
+                                          </li>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">Forum</a>
+
+                                          </li>
+
+
+
+                                          <li
+                                            class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+                                            <a class="header__menu-link  ">Research</a>
+
+                                          </li>
+
+
+                                        </ul>
+
+
+                                      </li>
+
+
+
+                                      <li
+                                        class="header__menu-item header__menu-item--depth-1  hs-skip-lang-url-rewrite">
+                                        <a class="header__menu-link  ">Support</a>
+
+                                      </li> -->
+
+
+
+
+
+
+
+                                      <li
+                                        class="header__menu-item header__menu-item--button header__menu-item--depth-1 hs-skip-lang-url-rewrite">
+                                        <a style="color: #000000;" href="tel:1-866-711-2025">
+                                          +1 (866) 711-2025
+                                        </a>
+                                      </li>
+
+                                    </ul>
+                                  </nav>
+                                </div>
+
+
+                              </div>
+                              <div class="mobile-cart">
+                                <a id="nav-top-mobile-cart" href="/cart?hsLang=en">
+                                  <i class="fad fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                              </div>
+
+
+                              <div class="header__button-col hidden-phone">
+                                <a stlye="color: #000000;" href="tel:1-866-711-2025">
+                                  +1 (866) 711-2025
+                                </a>
+                              </div>
+
+                            </div>
+                          </div>
+
+                        </div>
+
+
+
+                      </div>
+
+                    </div><!--end widget-span -->
+                  </div><!--end row-->
+                </div><!--end row-wrapper -->
+
+              </div><!--end widget-span -->
+            </div>
+          </div>
+        </div>
+
+      </header>
+    </div>
+
+
+
+
+    <main id="main-content" class="body-container-wrapper">
+
+      <div class="container-fluid body-container body-container--service-gpu-overview has-subnav">
+        <div class="row-fluid-wrapper">
+          <div class="row-fluid">
+            <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+
+              <div
+                class="row-fluid-wrapper row-depth-1 row-number-1 dnd_area-row-0-force-full-width-section dnd-section dnd_area-row-0-padding">
+                <div class="row-fluid ">
+                  <div class="span12 widget-span widget-type-cell cell_16614452706882-padding dnd-column" style=""
+                    data-widget-type="cell" data-x="0" data-w="12">
+
+                    <div class="row-fluid-wrapper row-depth-1 row-number-2 dnd-row">
+                      <div class="row-fluid ">
+                        <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                          data-widget-type="custom_widget" data-x="0" data-w="12">
+                          <div id="hs_cos_wrapper_widget_1663176311991"
+                            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                            data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                            <div id="product-nav-wrapper" class="">
+                              <div id="product-nav" class="subnav" style="background: rgba(#null, 0.0);">
+
+                                <div class="subnav-logo">
+                                  <a style="color: initial;"><span style="font-size: 24px;"><strong>GPU
+                                        Cloud</strong></span></a>
+                                </div>
+                                <div class="subnav-menu">
+
+
+
+
+
+
+
+
+
+
+
+                                  <nav class="menu menu--desktop" aria-label="Main menu">
+                                    <ul class="menu__wrapper no-list">
+
+
+
+
+
+
+
+
+                                      <li class="menu__item menu__item--depth-1  hs-skip-lang-url-rewrite">
+
+                                        <a class="menu__link  menu__link--active-branch menu__link--active-link"
+                                          href="demand-cloud.html" aria-current="page">Overview</a>
+
+
+                                      </li>
+
+
+
+                                      <li class="menu__item menu__item--depth-1  hs-skip-lang-url-rewrite">
+
+                                        <a class="menu__link  menu__link--active-branch menu__link--active-link"
+                                          aria-current="page">Pricing</a>
+
+
+                                      </li>
+
+
+
+                                      <li class="menu__item menu__item--depth-1  hs-skip-lang-url-rewrite">
+
+                                        <a class="menu__link   ">FAQs</a>
+
+
+                                      </li>
+
+
+
+
+                                    </ul>
+                                  </nav>
+
+
+
+                                  <nav class="menu menu--mobile" aria-label="Main menu">
+                                    <ul class="menu__wrapper no-list">
+
+
+
+
+
+
+
+
+                                      <li class="menu__item menu__item--depth-1  hs-skip-lang-url-rewrite">
+
+                                        <a class="menu__link  menu__link--active-branch menu__link--active-link"
+                                          href="demand-cloud.html" aria-current="page">Overview</a>
+
+
+                                      </li>
+
+
+
+                                      <li class="menu__item menu__item--depth-1  hs-skip-lang-url-rewrite">
+
+                                        <a class="menu__link  menu__link--active-branch menu__link--active-link"
+                                          aria-current="page">Pricing</a>
+
+
+                                      </li>
+
+
+
+                                      <li class="menu__item menu__item--depth-1  hs-skip-lang-url-rewrite">
+
+                                        <a class="menu__link   ">FAQs</a>
+
+
+                                      </li>
+
+
+
+
+                                    </ul>
+                                  </nav>
+
+
+
+                                </div>
+
+                                <div class="subnav-cta">
+
+
+                                  <a class="button solid-btn" href="sign-up.html">
+                                    Sign up
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div>
+                            <script src="js/jquery.min.js"></script>
+                            <script>
+                              $(window).scroll(function () {
+                                if ($(this).scrollTop() > 50) {
+                                  $('#product-nav-wrapper').addClass('border-bottom');
+                                } else {
+                                  $('#product-nav-wrapper').removeClass('border-bottom');
+                                }
+                              });
+                            </script>
+                          </div>
+
+                        </div><!--end widget-span -->
+                      </div><!--end row-->
+                    </div><!--end row-wrapper -->
+
+                  </div><!--end widget-span -->
+                </div><!--end row-->
+              </div><!--end row-wrapper -->
+
+              <div class="row-fluid-wrapper row-depth-1 row-number-3 dnd_area-row-1-padding dnd-section">
+                <div class="row-fluid ">
+                  <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell"
+                    data-x="0" data-w="12">
+
+                    <div class="row-fluid-wrapper row-depth-1 row-number-4 dnd-row">
+                      <div class="row-fluid ">
+                        <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                          data-widget-type="custom_widget" data-x="0" data-w="12">
+                          <div id="hs_cos_wrapper_widget_1664395606043"
+                            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                            data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                            <style>
+
+
+
+                            </style>
+
+
+
+
+                            <div style="position:relative;">
+                              <div style="align-items:end;" class="text-img-grid left-text  ">
+
+                                <div class="img-col">
+
+
+
+
+
+
+                                  <img class="default-img" src="images/on-demand-cloud-hero-image-updated.png"
+                                    alt="Lambda On Demand GPU Cloud" loading="" style="max-width: 100%; height: auto;">
+
+                                </div>
+
+                                <div class="text-col  animate__animated animate__fadeIn animate__delay-1s"
+                                  style="text-align:left;">
+
+                                  <span class="colored-mustache purple"></span>
+
+                                  <h1 class="hero-headline " ">
+                                    <span " class="gradient-text">The fastest access to
+                                    enterprise-grade cloud GPUs</span>
+                                  </h1>
+
+
+
+
+                                  <p>On-demand NVIDIA GPUs for AI training, fine-tuning &amp; inference</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  <div class="button-wrapper ">
+
+                                    <a class="button solid-btn" href="sign-up.html">
+                                      Sign up for free
+                                    </a>
+
+
+
+
+
+
+                                    <a class="button border-btn" href="sign-in.html">
+                                      Sign in ›
+                                    </a>
+
+
+
+
+
+
+
+
+                                  </div>
+
+
+
+
+
+                                </div>
+
+                              </div>
+
+                            </div>
+                          </div>
+
+                        </div><!--end widget-span -->
+                      </div><!--end row-->
+                    </div><!--end row-wrapper -->
+
+                  </div><!--end widget-span -->
+                </div><!--end row-->
+              </div><!--end row-wrapper -->
+
+              <div class="row-fluid-wrapper row-depth-1 row-number-5 dnd-section">
+                <div class="row-fluid ">
+                  <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell"
+                    data-x="0" data-w="12">
+
+                    <div class="row-fluid-wrapper row-depth-1 row-number-6 dnd-row">
+                      <div class="row-fluid ">
+                        <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                          data-widget-type="custom_widget" data-x="0" data-w="12">
+                          <div id="hs_cos_wrapper_widget_1667251732494"
+                            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                            data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                            <div class="divider-container">
+                              <div class="divider-text">TRUSTED BY FORTUNE 500 COMPANIES &amp; AI STARTUPS</div>
+                              <div class="divider-line"></div>
+                            </div>
+                          </div>
+
+                        </div><!--end widget-span -->
+                      </div><!--end row-->
+                    </div><!--end row-wrapper -->
+
+                    <div class="row-fluid-wrapper row-depth-1 row-number-7 dnd-row">
+                      <div class="row-fluid ">
+                        <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                          data-widget-type="custom_widget" data-x="0" data-w="12">
+                          <div id="hs_cos_wrapper_widget_1661798752883"
+                            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                            data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                            <div style="margin-top: 25px;
+">
+                              <div class="client-slider seven-col-flex">
+
+
+
+
+
+                                <div>
+
+
+
+                                  <img class="" style="opacity: ;" src="images/generally-intelligent-grey.svg"
+                                    alt="generally-intelligent-grey" loading="" width="400" height="400">
+
+                                </div>
+
+
+
+
+
+
+
+                                <div>
+
+
+
+                                  <img class="" style="opacity: ;" src="images/intuitive-gray.svg" alt="intuitive-gray"
+                                    loading="" width="400" height="400">
+
+                                </div>
+
+
+
+
+
+
+
+                                <div>
+
+
+
+                                  <img class="" style="opacity: ;" src="images/voltron-data-grey.svg"
+                                    alt="voltron-data-grey" loading="" width="400" height="400">
+
+                                </div>
+
+
+
+
+
+
+
+                                <div>
+
+
+
+                                  <img class="" style="opacity: ;" src="images/writer-gray-logo.svg"
+                                    alt="writer-gray-logo" loading="" width="400" height="400">
+
+                                </div>
+
+
+
+
+
+
+
+                                <div>
+
+
+
+                                  <img class="" style="opacity: ;" src="images/sony-1.svg" alt="sony-1" loading=""
+                                    width="400" height="400">
+
+                                </div>
+
+
+
+
+
+
+
+                                <div>
+
+
+
+                                  <img class="" style="opacity: ;" src="images/samsung-grey.svg" alt="samsung-grey"
+                                    loading="" width="400" height="400">
+
+                                </div>
+
+
+
+
+
+
+
+                                <div>
+
+
+
+                                  <img class="" style="opacity: ;" src="images/picsart-grey.svg" alt="picsart-grey"
+                                    loading="" width="400" height="400">
+
+                                </div>
+
+
+
+                              </div>
+                            </div>
+                          </div>
+
+                        </div><!--end widget-span -->
+                      </div><!--end row-->
+                    </div><!--end row-wrapper -->
+
+                  </div><!--end widget-span -->
+                </div><!--end row-->
+              </div><!--end row-wrapper -->
+
+              <div
+                class="row-fluid-wrapper row-depth-1 row-number-8 dnd-section dnd_area-row-3-padding dnd_area-row-3-force-full-width-section">
+                <div class="row-fluid ">
+                  <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell"
+                    data-x="0" data-w="12">
+
+                    <div class="row-fluid-wrapper row-depth-1 row-number-9 dnd-row">
+                      <div class="row-fluid ">
+                        <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                          data-widget-type="custom_widget" data-x="0" data-w="12">
+                          <div id="hs_cos_wrapper_module_16859888215442"
+                            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                            data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                            <div class="divider-container">
+                              <div class="divider-text">GPU OPTIMIZED</div>
+                              <div class="divider-line"></div>
+                            </div>
+                          </div>
+
+                        </div><!--end widget-span -->
+                      </div><!--end row-->
+                    </div><!--end row-wrapper -->
+
+                  </div><!--end widget-span -->
+                </div><!--end row-->
+              </div><!--end row-wrapper -->
+
+              <div class="row-fluid-wrapper row-depth-1 row-number-10 dnd-section dnd_area-row-4-padding">
+                <div class="row-fluid ">
+                  <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell"
+                    data-x="0" data-w="12">
+
+                    <div class="row-fluid-wrapper row-depth-1 row-number-11 dnd-row">
+                      <div class="row-fluid ">
+                        <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                          data-widget-type="custom_widget" data-x="0" data-w="12">
+                          <div id="hs_cos_wrapper_module_1661799144441"
+                            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                            data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                            <style>
+                              @media (min-width: 768px) {
+                                .text-img-grid.left-text {
+                                  grid-template-columns: 1.3fr 1fr;
+                                }
+
+                                .text-img-grid.right-text {
+                                  grid-template-columns: 1fr 1.3fr;
+                                }
+                              }
+                            </style>
+
+
+
+
+                            <div style="position:relative;">
+                              <div style="align-items:center;" class="text-block left-text  ">
+
+                                <div class="text-col  animate__animated animate__fadeIn animate__delay-1s"
+                                  style="text-align:left;">
+
+                                  <span class="colored-mustache purple"></span>
+
+                                  <h2 class="hero-headline heading3" ">
+
+                                  </h2>
+
+
+
+
+                                  <h2 style=" text-align: center;">Train &amp; fine-tune models on a GPU cloud built
+                                    for
+                                    AI workloads</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                </div>
+
+                              </div>
+
+                            </div>
+                          </div>
+
+                        </div><!--end widget-span -->
+                      </div><!--end row-->
+                    </div><!--end row-wrapper -->
+
+                  </div><!--end widget-span -->
+                </div><!--end row-->
+              </div><!--end row-wrapper -->
+
+              <div class="row-fluid-wrapper row-depth-1 row-number-12 dnd-section dnd_area-row-5-padding">
+                <div class="row-fluid ">
+                  <div class="span4 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0"
+                    data-w="4">
+
+                    <div class="row-fluid-wrapper row-depth-1 row-number-13 dnd-row">
+                      <div class="row-fluid ">
+                        <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                          data-widget-type="custom_widget" data-x="0" data-w="12">
+                          <div id="hs_cos_wrapper_module_17004971281077"
+                            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text"
+                            style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span
+                              id="hs_cos_wrapper_module_17004971281077_"
+                              class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style=""
+                              data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><span
+                                class="fa-stack fa-2x" style="display: inline-block; text-align: center; width: 2em;">
+                                <i class="fas fa-circle fa-stack-2x" style="color: #fbf6ff;" aria-hidden="true"></i> <i
+                                  class="mt-1 text-purple-bright fad fa-microchip fa-1x"
+                                  style="--fa-secondary-color: #E566D0;" aria-hidden="true"></i> </span>
+                              <h3>NVIDIA GPUs</h3>
+                              <p>Featuring access to NVIDIA H100, A100 &amp; A10 Tensor Core GPUs. Additional instance
+                                types include NVIDIA RTX A6000, RTX 6000 &amp; NVIDIA V100 Tensor Core GPU.</p>
+                            </span></div>
+
+                        </div><!--end widget-span -->
+                      </div><!--end row-->
+                    </div><!--end row-wrapper -->
+
+                  </div><!--end widget-span -->
+                  <div class="span4 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="4"
+                    data-w="4">
+
+                    <div class="row-fluid-wrapper row-depth-1 row-number-14 dnd-row">
+                      <div class="row-fluid ">
+                        <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                          data-widget-type="custom_widget" data-x="0" data-w="12">
+                          <div id="hs_cos_wrapper_module_17004971281079"
+                            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text"
+                            style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span
+                              id="hs_cos_wrapper_module_17004971281079_"
+                              class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style=""
+                              data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><span
+                                class="fa-stack fa-2x" style="display: inline-block; text-align: center; width: 2em;">
+                                <i class="fas fa-circle fa-stack-2x" style="color: #fbf6ff;" aria-hidden="true"></i> <i
+                                  class="mt-1 text-purple-bright fad fa-network-wired fa-1x"
+                                  style="--fa-secondary-color: #E566D0;" aria-hidden="true"></i> </span>
+                              <h3>Multi-GPU instances</h3>
+                              <p>Train and fine-tune AI models across instance types that make sense for your workload
+                                &amp; budget: 1x, 2x, 4x &amp; 8x NVIDIA GPU instances available.</p>
+                            </span></div>
+
+                        </div><!--end widget-span -->
+                      </div><!--end row-->
+                    </div><!--end row-wrapper -->
+
+                  </div><!--end widget-span -->
+                  <div class="span4 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="8"
+                    data-w="4">
+
+                    <div class="row-fluid-wrapper row-depth-1 row-number-15 dnd-row">
+                      <div class="row-fluid ">
+                        <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                          data-widget-type="custom_widget" data-x="0" data-w="12">
+                          <div id="hs_cos_wrapper_module_170049712810711"
+                            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text"
+                            style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span
+                              id="hs_cos_wrapper_module_170049712810711_"
+                              class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style=""
+                              data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><span
+                                class="fa-stack fa-2x" style="display: inline-block; text-align: center; width: 2em;">
+                                <i class="fas fa-circle fa-stack-2x" style="color: #fbf6ff;" aria-hidden="true"></i> <i
+                                  class="mt-1 text-purple-bright fad fa-webhook fa-1x"
+                                  style="--fa-secondary-color: #E566D0;" aria-hidden="true"></i> </span>
+                              <h3>Lambda Cloud API</h3>
+                              <p>Launch, terminate and restart instances from an easy-to-use developer-friendly API.
+                                Find out more in our <a href="https://cloud.lambdalabs.com/api/v1/docs"
+                                  rel="noopener">API developer docs.</a></p>
+                            </span></div>
+
+                        </div><!--end widget-span -->
+                      </div><!--end row-->
+                    </div><!--end row-wrapper -->
+
+                  </div><!--end widget-span -->
+                </div><!--end row-->
+              </div><!--end row-wrapper -->
+
+              <div class="row-fluid-wrapper row-depth-1 row-number-16 dnd_area-row-6-padding dnd-section">
+                <div class="row-fluid ">
+                  <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell"
+                    data-x="0" data-w="12">
+
+                    <div class="row-fluid-wrapper row-depth-1 row-number-17 dnd-row">
+                      <div class="row-fluid ">
+                        <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                          data-widget-type="custom_widget" data-x="0" data-w="12">
+                          <div id="hs_cos_wrapper_module_17004973726623"
+                            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                            data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                            <style>
+                              @media (min-width: 768px) {
+                                .text-img-grid.left-text {
+                                  grid-template-columns: 1.3fr 1fr;
+                                }
+
+                                .text-img-grid.right-text {
+                                  grid-template-columns: 1fr 1.3fr;
+                                }
+                              }
+                            </style>
+
+
+
+
+                            <div style="position:relative;">
+                              <div style="align-items:center;" class="text-block left-text  ">
+
+                                <div class="text-col  animate__animated animate__fadeIn animate__delay-1s"
+                                  style="text-align:center;">
+
+                                  <span class="colored-mustache purple"></span>
+
+                                  <h2 class="hero-headline heading3" ">
+
+                                  </h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  <div class=" button-wrapper ">
+
+                                    <a class=" button solid-btn" href="sign-up.html">
+                                    Launch instance
+                                    </a>
+
+
+
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+              </div><!--end row-->
+            </div><!--end row-wrapper -->
+
+            <div
+              class="row-fluid-wrapper row-depth-1 row-number-18 dnd-section dnd_area-row-7-force-full-width-section dnd_area-row-7-padding">
+              <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0"
+                  data-w="12">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-19 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_module_16859855817823"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                          <div class="divider-container">
+                            <div class="divider-text">TRUSTED BY EXPERTS</div>
+                            <div class="divider-line"></div>
+                          </div>
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+              </div><!--end row-->
+            </div><!--end row-wrapper -->
+
+            <div
+              class="row-fluid-wrapper row-depth-1 row-number-20 dnd-section dnd_area-row-8-padding dnd_area-row-8-vertical-alignment">
+              <div class="row-fluid ">
+                <div class="span8 widget-span widget-type-cell cell_17005082724892-vertical-alignment dnd-column"
+                  style="" data-widget-type="cell" data-x="0" data-w="8">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-21 dnd-row">
+                    <div class="row-fluid ">
+                      <div
+                        class="span12 widget-span widget-type-custom_widget dnd-module module_17005082724895-flexbox-positioning"
+                        style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_module_17005082724895"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-linked_image"
+                          style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+
+
+
+
+
+
+
+                          <span id="hs_cos_wrapper_module_17005082724895_"
+                            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image" style=""
+                            data-hs-cos-general-type="widget" data-hs-cos-type="linked_image"><img
+                              src="images/Lambda_Testimonial_4Quotes_abridged-large.png" class="hs-image-widget "
+                              width="1000" height="573" style="max-width: 100%; height: auto;"
+                              alt="Lambda-On-Demand-Cloud-Testimonials" title="Lambda-On-Demand-Cloud-Testimonials"
+                              loading="lazy"
+                              srcset="images/Lambda_Testimonial_4Quotes_abridged-large_5.png 500w, images/Lambda_Testimonial_4Quotes_abridged-large.png 1000w, images/Lambda_Testimonial_4Quotes_abridged-large_3.png 1500w, images/Lambda_Testimonial_4Quotes_abridged-large_4.png 2000w, images/Lambda_Testimonial_4Quotes_abridged-large_2.png 2500w, images/Lambda_Testimonial_4Quotes_abridged-large_1.png 3000w"
+                              sizes="(max-width: 1000px) 100vw, 1000px"></span>
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+                <div class="span4 widget-span widget-type-cell cell_17005082724893-vertical-alignment dnd-column"
+                  style="" data-widget-type="cell" data-x="8" data-w="4">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-22 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_module_17005082724898"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text"
+                          style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span
+                            id="hs_cos_wrapper_module_17005082724898_"
+                            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style=""
+                            data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
+                            <h2 style="text-align: left;">Trusted by thousands of AI Developers</h2>
+                            <p style="text-align: left;">ML Engineers &amp; Researchers love Lambda On-Demand Cloud
+                              for its simplicity, speed &amp; ML-first user experience.</p>
+                          </span></div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+              </div><!--end row-->
+            </div><!--end row-wrapper -->
+
+            <div
+              class="row-fluid-wrapper row-depth-1 row-number-23 dnd-section dnd_area-row-9-padding dnd_area-row-9-force-full-width-section">
+              <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0"
+                  data-w="12">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-24 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_module_16859885775003"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                          <div class="divider-container">
+                            <div class="divider-text">PLUG &amp; PLAY</div>
+                            <div class="divider-line"></div>
+                          </div>
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+              </div><!--end row-->
+            </div><!--end row-wrapper -->
+
+            <div class="row-fluid-wrapper row-depth-1 row-number-25 dnd-section dnd_area-row-10-vertical-alignment">
+              <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-cell cell_16614428351572-vertical-alignment dnd-column"
+                  style="" data-widget-type="cell" data-x="0" data-w="12">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-26 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_module_16614428351582"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                          <style>
+
+
+
+                          </style>
+
+
+
+
+                          <div style="position:relative;">
+                            <div style="align-items:center;" class="text-img-grid left-text  ">
+
+                              <div class="img-col">
+
+
+
+
+
+
+                                <img class="default-img" src="images/lambda-stack.png" alt="Lambda-stack" loading=""
+                                  style="max-width: 100%; height: auto;">
+
+                              </div>
+
+                              <div class="text-col  animate__animated animate__fadeIn animate__delay-1s"
+                                style="text-align:left;">
+
+                                <span class="colored-mustache purple"></span>
+
+                                <h2 class="hero-headline heading3" ">
+                                    GPU instances pre-configured for machine learning
+                                  </h2>
+
+
+
+
+                                  <h3 class=" heading5 mt-10">One-click Jupyter access</h3>
+                                  <p>Quickly connect to NVIDIA GPU instances directly from your browser.�&nbsp;</p>
+                                  <h3 class="heading5">Pre-installed with popular ML frameworks</h3>
+                                  <p>Ubuntu, TensorFlow, PyTorch, NVIDIA CUDA, and NVIDIA cuDNN come ready to use with
+                                    <a href="/lambda-stack-deep-learning-software?hsLang=en" rel="noopener">Lambda
+                                      Stack</a>.
+                                  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  <div class="button-wrapper ">
+
+                                    <a class="button solid-btn" href="#">
+                                      Learn more
+                                    </a>
+
+
+
+
+
+
+
+
+
+                                  </div>
+
+
+
+
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+              </div><!--end row-->
+            </div><!--end row-wrapper -->
+
+            <div
+              class="row-fluid-wrapper row-depth-1 row-number-27 dnd-section dnd_area-row-11-force-full-width-section dnd_area-row-11-padding">
+              <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0"
+                  data-w="12">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-28 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_module_17025684549764"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                          <div class="divider-container">
+                            <div class="divider-text">NVIDIA H100 ON-DEMAND</div>
+                            <div class="divider-line"></div>
+                          </div>
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+              </div><!--end row-->
+            </div><!--end row-wrapper -->
+
+            <div class="row-fluid-wrapper row-depth-1 row-number-29 dnd_area-row-12-vertical-alignment dnd-section">
+              <div class="row-fluid ">
+                <div class="span6 widget-span widget-type-cell cell_1700501287924-vertical-alignment dnd-column"
+                  style="" data-widget-type="cell" data-x="0" data-w="6">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-30 dnd-row">
+                    <div class="row-fluid ">
+                      <div
+                        class="span12 widget-span widget-type-custom_widget widget_1700501287830-flexbox-positioning dnd-module"
+                        style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_widget_1700501287830"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-linked_image"
+                          style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+
+
+
+
+
+
+
+                          <span id="hs_cos_wrapper_widget_1700501287830_"
+                            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image" style=""
+                            data-hs-cos-general-type="widget" data-hs-cos-type="linked_image"><img
+                              src="images/h100-ai-every-scale-single-hgx-bf3-2631633%20%281%29.png"
+                              class="hs-image-widget " width="283" height="300" style="max-width: 100%; height: auto;"
+                              alt="H100 HGX" title="H100 HGX" loading="lazy"
+                              srcset="images/h100-ai-every-scale-single-hgx-bf3-2631633%20%281%29_1.png 142w, images/h100-ai-every-scale-single-hgx-bf3-2631633%20%281%29.png 283w, images/h100-ai-every-scale-single-hgx-bf3-2631633%20%281%29_5.png 425w, images/h100-ai-every-scale-single-hgx-bf3-2631633%20%281%29_3.png 566w, images/h100-ai-every-scale-single-hgx-bf3-2631633%20%281%29_2.png 708w, images/h100-ai-every-scale-single-hgx-bf3-2631633%20%281%29_4.png 849w"
+                              sizes="(max-width: 283px) 100vw, 283px"></span>
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+                <div class="span6 widget-span widget-type-cell cell_17005012419832-vertical-alignment dnd-column"
+                  style="" data-widget-type="cell" data-x="6" data-w="6">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-31 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_widget_1700501241690"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text"
+                          style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span
+                            id="hs_cos_wrapper_widget_1700501241690_"
+                            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style=""
+                            data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
+                            <h2 style="text-align: center;">NVIDIA H100s are now available on-demand</h2>
+                            <p style="text-align: center;">Lambda is one of the first cloud providers to make NVIDIA
+                              H100 Tensor Core GPUs available on-demand in a public cloud.</p>
+                            <h3 style="text-align: center; font-size: 20px;">Starting at <span
+                                style="font-weight: bold; color: #7030c4;">$2.49/GPU/Hour</span></h3>
+                          </span></div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-32 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_widget_1700501392955"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          <div class="button-wrapper center-btn ">
+
+
+
+
+
+
+
+
+
+                          </div>
+
+
+
+
+                          <script>
+
+                          </script>
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+              </div><!--end row-->
+            </div><!--end row-wrapper -->
+
+            <div
+              class="row-fluid-wrapper row-depth-1 row-number-33 dnd_area-row-13-padding dnd-section dnd_area-row-13-force-full-width-section">
+              <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0"
+                  data-w="12">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-34 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_module_17025684868944"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                          <div class="divider-container">
+                            <div class="divider-text">STORAGE</div>
+                            <div class="divider-line"></div>
+                          </div>
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+              </div><!--end row-->
+            </div><!--end row-wrapper -->
+
+            <div class="row-fluid-wrapper row-depth-1 row-number-35 dnd_area-row-14-vertical-alignment dnd-section">
+              <div class="row-fluid ">
+                <div class="span8 widget-span widget-type-cell cell_17005010797542-vertical-alignment dnd-column"
+                  style="" data-widget-type="cell" data-x="0" data-w="8">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-36 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_module_1700501079755"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                          <style>
+                            @media (min-width: 768px) {
+                              .text-img-grid.left-text {
+                                grid-template-columns: 1.3fr 1fr;
+                              }
+
+                              .text-img-grid.right-text {
+                                grid-template-columns: 1fr 1.3fr;
+                              }
+                            }
+                          </style>
+
+
+
+
+                          <div style="position:relative;">
+                            <div style="" class="text-block   right-text">
+
+                              <div class="text-col  animate__animated animate__fadeIn animate__delay-1s"
+                                style="text-align:left;">
+
+                                <span class="colored-mustache purple"></span>
+
+                                <h1 class="hero-headline " ">
+
+                                  </h1>
+
+
+
+
+                                  <h2>High-speed filesystem for GPU instances</h2>
+                                  <p id=" hero-paragraph">Create filesystems in Lambda On-Demand Cloud to persist files
+                                  and data with your compute.</p>
+                                  <ul>
+                                    <li><strong>Scalable performance: </strong>Adapts to growing storage needs without
+                                      compromising speed.</li>
+                                    <li><strong>Cost-efficient:</strong> Only pay for the storage you use, optimizing
+                                      budget allocation.*</li>
+                                    <li><strong>No limitations:</strong> No ingress, no egress and no hard limit on how
+                                      much you can store.</li>
+                                  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+                <div class="span4 widget-span widget-type-cell cell_17005010797543-vertical-alignment dnd-column"
+                  style="" data-widget-type="cell" data-x="8" data-w="4">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-37 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_module_17005010797553"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                          <div class="grey-table">
+                            <div data-hs-responsive-table="true"
+                              style="border: none; overflow-x: auto; max-width: 100%; width: 100%; font-size: 14px;">
+                              <table style="width: 100%; height: 117px; border: none;">
+                                <thead style="border-bottom: 1px solid #000000;">
+                                  <tr style="height: 57px;">
+                                    <th
+                                      style="background-color: #7030c4; text-align: left; height: 57px; border-bottom: 1px solid #e5e7eb; width: 39.6717%;"
+                                      scope="col"><span style="color: #ffffff; font-size: 12px;">Storage</span></th>
+                                    <th
+                                      style="background-color: #7030c4; text-align: left; height: 57px; border-bottom: 1px solid #e5e7eb; width: 60.1759%;"
+                                      scope="col"><span style="color: #ffffff; font-size: 12px;">Rate</span></th>
+                                  </tr>
+                                </thead>
+                                <tbody class="bg-white divide-y divide-solid divide-gray-200">
+                                  <tr style="height: 60px; border-bottom: 1px solid #e5e7eb;">
+                                    <td style="width: 39.6717%; height: 60px; border-bottom: 1px solid #e5e7eb;">
+                                      <strong>Shared filesystems</strong>
+                                    </td>
+                                    <td style="width: 60.1759%; height: 60px; border-bottom: 1px solid #e5e7eb;">$0.20
+                                      / GB / month</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+              </div><!--end row-->
+            </div><!--end row-wrapper -->
+
+            <div
+              class="row-fluid-wrapper row-depth-1 row-number-38 dnd-section dnd_area-row-15-force-full-width-section dnd_area-row-15-padding">
+              <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0"
+                  data-w="12">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-39 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_module_17005082509223"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                          <div class="divider-container">
+                            <div class="divider-text">SAVE MORE</div>
+                            <div class="divider-line"></div>
+                          </div>
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+              </div><!--end row-->
+            </div><!--end row-wrapper -->
+
+            <div class="row-fluid-wrapper row-depth-1 row-number-40 dnd-section">
+              <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0"
+                  data-w="12">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-41 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_widget_1661441267410"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                          <style>
+
+
+
+                          </style>
+
+
+
+
+                          <div style="position:relative;">
+                            <div style="" class="text-img-grid left-text  ">
+
+                              <div class="img-col">
+
+
+
+
+
+
+                                <img class="default-img" src="images/A100-On-Demand_Cloud_Pricing_Comparison_Chart.svg"
+                                  alt="A100-On-Demand_Cloud_Pricing_Comparison_Chart" loading=""
+                                  style="max-width: 100%; height: auto;">
+
+                              </div>
+
+                              <div class="text-col  animate__animated animate__fadeIn animate__delay-1s"
+                                style="text-align:left;">
+
+                                <span class="colored-mustache purple"></span>
+
+                                <h2 class="hero-headline heading3" ">
+                                    Save over 68% on your cloud bill
+                                  </h2>
+
+
+
+
+                                  <p class=" heading5">�&nbsp;</p>
+                                  <h3 class="heading5">Pay-by-the-second billing</h3>
+                                  <p>Only pay when your instance is running.</p>
+                                  <h3 class="heading5">Simple, transparent pricing</h3>
+                                  <p>No hidden fees like data egress or ingress.�&nbsp;<br><br></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  <div class="button-wrapper ">
+
+                                    <a class="button solid-btn" href="sign-up.html">
+                                      Sign up for free
+                                    </a>
+
+
+
+
+
+
+
+
+
+                                  </div>
+
+
+
+
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+              </div><!--end row-->
+            </div><!--end row-wrapper -->
+
+            <div
+              class="row-fluid-wrapper row-depth-1 row-number-42 dnd_area-row-17-padding dnd_area-row-17-force-full-width-section dnd-section">
+              <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0"
+                  data-w="12">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-43 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_module_1700581151840"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                          <div class="divider-container">
+                            <div class="divider-text">TRANSPARENT PRICING</div>
+                            <div class="divider-line"></div>
+                          </div>
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+              </div><!--end row-->
+            </div><!--end row-wrapper -->
+
+            <div class="row-fluid-wrapper row-depth-1 row-number-44 dnd_area-row-18-padding dnd-section">
+              <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0"
+                  data-w="12">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-45 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_widget_1661799228307"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                          <style>
+
+
+
+                          </style>
+
+
+
+
+                          <div style="position:relative;">
+                            <div style="" class="text-block left-text  ">
+
+                              <div class="text-col  animate__animated animate__fadeIn animate__delay-1s"
+                                style="text-align:left;">
+
+                                <span class="colored-mustache purple"></span>
+
+                                <h2 class="hero-headline heading3" ">
+                                    On-demand GPU cloud pricing
+                                  </h2>
+
+
+
+
+                                  <a id=" pricing" data-hs-anchor="true"></a>
+                                  <p>Access high power GPUs when you need them and only pay for what you use. There are
+                                    no charges for egress.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-46 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_widget_1663156291636"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                          <div data-hs-responsive-table="true"
+                            style="border: none; overflow-x: auto; max-width: 100%; width: 100%; font-size: 14px;">
+                            <table style="width: 100%; height: 842px; border: none;">
+                              <thead style="border-bottom: 1px solid #000000;">
+                                <tr style="height: 61px;">
+                                  <th
+                                    style="background-color: #ffffff; text-align: left; height: 61px; border-bottom: 1px solid #e5e7eb; width: 24%;"
+                                    scope="col"><span style="color: #6b7280; font-size: 12px;">GPUs</span></th>
+                                  <th
+                                    style="background-color: #ffffff; text-align: left; height: 61px; border-bottom: 1px solid #e5e7eb; width: 16%;"
+                                    scope="col"><span style="color: #6b7280; font-size: 12px;">VRAM per GPU</span>
+                                  </th>
+                                  <th
+                                    style="background-color: #ffffff; text-align: left; height: 61px; border-bottom: 1px solid #e5e7eb; width: 10%;"
+                                    scope="col"><span style="color: #6b7280; font-size: 12px;">vCPUs</span></th>
+                                  <th
+                                    style="background-color: #ffffff; text-align: left; height: 61px; border-bottom: 1px solid #e5e7eb; width: 14%;"
+                                    scope="col"><span style="color: #6b7280; font-size: 12px;">RAM</span></th>
+                                  <th
+                                    style="background-color: #ffffff; text-align: left; height: 61px; border-bottom: 1px solid #e5e7eb; width: 18%;"
+                                    scope="col"><span style="color: #6b7280; font-size: 12px;">Storage</span></th>
+                                  <th
+                                    style="background-color: #ffffff; text-align: left; height: 61px; border-bottom: 1px solid #e5e7eb; width: 18%;"
+                                    scope="col"><span style="color: #6b7280; font-size: 12px;">Price</span></th>
+                                </tr>
+                              </thead>
+                              <tbody class="bg-white divide-y divide-solid divide-gray-200">
+                                <tr style="height: 60px; border-bottom: 1px solid #e5e7eb;">
+                                  <td style="width: 24%; height: 60px; border-bottom: 1px solid #e5e7eb;"><strong>8x
+                                      NVIDIA H100 SXM <span class="tag">New</span></strong></td>
+                                  <td style="width: 16%; height: 60px; border-bottom: 1px solid #e5e7eb;">80 GB</td>
+                                  <td style="width: 10%; height: 60px; border-bottom: 1px solid #e5e7eb;">208</td>
+                                  <td style="width: 14%; height: 60px; border-bottom: 1px solid #e5e7eb;">1800 GiB
+                                  </td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">26 TiB SSD
+                                  </td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">$27.92 / hr
+                                  </td>
+                                </tr>
+                                <tr style="height: 60px; border-bottom: 1px solid #e5e7eb;">
+                                  <td style="width: 24%; height: 60px; border-bottom: 1px solid #e5e7eb;"><strong>1x
+                                      NVIDIA H100 PCIe <span class="tag">New</span></strong></td>
+                                  <td style="width: 16%; height: 60px; border-bottom: 1px solid #e5e7eb;">80 GB</td>
+                                  <td style="width: 10%; height: 60px; border-bottom: 1px solid #e5e7eb;">26</td>
+                                  <td style="width: 14%; height: 60px; border-bottom: 1px solid #e5e7eb;">200 GiB</td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">1 TiB SSD
+                                  </td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">$2.49 / hr
+                                  </td>
+                                </tr>
+                                <tr style="height: 60px;">
+                                  <td style="width: 24%; height: 60px; border-bottom: 1px solid #e5e7eb;"><strong>8x
+                                      NVIDIA A100 SXM</strong></td>
+                                  <td style="width: 16%; height: 60px; border-bottom: 1px solid #e5e7eb;">80 GB</td>
+                                  <td style="width: 10%; height: 60px; border-bottom: 1px solid #e5e7eb;">240</td>
+                                  <td style="width: 14%; height: 60px; border-bottom: 1px solid #e5e7eb;">1800 GiB
+                                  </td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">20 TiB SSD
+                                  </td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">$14.32 / hr
+                                  </td>
+                                </tr>
+                                <tr style="height: 60px; border-bottom: 1px solid #e5e7eb;">
+                                  <td style="width: 24%; height: 60px; border-bottom: 1px solid #e5e7eb;"><strong>8x
+                                      NVIDIA A100 SXM</strong></td>
+                                  <td style="width: 16%; height: 60px; border-bottom: 1px solid #e5e7eb;">40 GB</td>
+                                  <td style="width: 10%; height: 60px; border-bottom: 1px solid #e5e7eb;">124</td>
+                                  <td style="width: 14%; height: 60px; border-bottom: 1px solid #e5e7eb;">1800 GiB
+                                  </td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">6 TiB SSD
+                                  </td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">$10.32 / hr
+                                  </td>
+                                </tr>
+                                <tr style="height: 60px; border-bottom: 1px solid #e5e7eb;">
+                                  <td style="width: 24%; height: 60px; border-bottom: 1px solid #e5e7eb;"><strong>1x
+                                      NVIDIA A100 SXM</strong></td>
+                                  <td style="width: 16%; height: 60px; border-bottom: 1px solid #e5e7eb;">40 GB</td>
+                                  <td style="width: 10%; height: 60px; border-bottom: 1px solid #e5e7eb;">30</td>
+                                  <td style="width: 14%; height: 60px; border-bottom: 1px solid #e5e7eb;">200 GiB</td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">512 GiB SSD
+                                  </td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">$1.29 / hr
+                                  </td>
+                                </tr>
+                                <tr style="height: 60px; border-bottom: 1px solid #e5e7eb;">
+                                  <td style="width: 24%; height: 60px; border-bottom: 1px solid #e5e7eb;"><strong>4x
+                                      NVIDIA A100 PCIe</strong></td>
+                                  <td style="width: 16%; height: 60px; border-bottom: 1px solid #e5e7eb;">40 GB</td>
+                                  <td style="width: 10%; height: 60px; border-bottom: 1px solid #e5e7eb;">120</td>
+                                  <td style="width: 14%; height: 60px; border-bottom: 1px solid #e5e7eb;">800 GiB</td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">1 TiB SSD
+                                  </td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">$5.16 / hr
+                                  </td>
+                                </tr>
+                                <tr style="height: 60px; border-bottom: 1px solid #e5e7eb;">
+                                  <td style="width: 24%; height: 60px; border-bottom: 1px solid #e5e7eb;"><strong>2x
+                                      NVIDIA A100 PCIe</strong></td>
+                                  <td style="width: 16%; height: 60px; border-bottom: 1px solid #e5e7eb;">40 GB</td>
+                                  <td style="width: 10%; height: 60px; border-bottom: 1px solid #e5e7eb;">60</td>
+                                  <td style="width: 14%; height: 60px; border-bottom: 1px solid #e5e7eb;">400 GiB</td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">1 TiB SSD
+                                  </td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">$2.58 / hr
+                                  </td>
+                                </tr>
+                                <tr style="height: 60px; border-bottom: 1px solid #e5e7eb;">
+                                  <td style="width: 24%; height: 60px; border-bottom: 1px solid #e5e7eb;"><strong>1x
+                                      NVIDIA A100 PCIe</strong></td>
+                                  <td style="width: 16%; height: 60px; border-bottom: 1px solid #e5e7eb;">40 GB</td>
+                                  <td style="width: 10%; height: 60px; border-bottom: 1px solid #e5e7eb;">30</td>
+                                  <td style="width: 14%; height: 60px; border-bottom: 1px solid #e5e7eb;">200 GiB</td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">512 GiB SSD
+                                  </td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">$1.29 / hr
+                                  </td>
+                                </tr>
+                                <tr style="height: 60px; border-bottom: 1px solid #e5e7eb;">
+                                  <td style="width: 24%; height: 60px; border-bottom: 1px solid #e5e7eb;"><strong>1x
+                                      NVIDIA A10</strong></td>
+                                  <td style="width: 16%; height: 60px; border-bottom: 1px solid #e5e7eb;">24 GB</td>
+                                  <td style="width: 10%; height: 60px; border-bottom: 1px solid #e5e7eb;">30</td>
+                                  <td style="width: 14%; height: 60px; border-bottom: 1px solid #e5e7eb;">200 GiB</td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">1.4 TiB SSD
+                                  </td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">$0.75 / hr
+                                  </td>
+                                </tr>
+                                <tr style="height: 60px; border-bottom: 1px solid #e5e7eb;">
+                                  <td style="width: 24%; height: 60px; border-bottom: 1px solid #e5e7eb;"><strong>4x
+                                      NVIDIA A6000</strong></td>
+                                  <td style="width: 16%; height: 60px; border-bottom: 1px solid #e5e7eb;">48 GB</td>
+                                  <td style="width: 10%; height: 60px; border-bottom: 1px solid #e5e7eb;">56</td>
+                                  <td style="width: 14%; height: 60px; border-bottom: 1px solid #e5e7eb;">400 GiB</td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">1 TiB SSD
+                                  </td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">$3.20 / hr
+                                  </td>
+                                </tr>
+                                <tr style="height: 60px; border-bottom: 1px solid #e5e7eb;">
+                                  <td style="width: 24%; height: 60px; border-bottom: 1px solid #e5e7eb;"><strong>2x
+                                      NVIDIA A6000</strong></td>
+                                  <td style="width: 16%; height: 60px; border-bottom: 1px solid #e5e7eb;">48 GB</td>
+                                  <td style="width: 10%; height: 60px; border-bottom: 1px solid #e5e7eb;">28</td>
+                                  <td style="width: 14%; height: 60px; border-bottom: 1px solid #e5e7eb;">200 GiB</td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">1 TiB SSD
+                                  </td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">$1.60 / hr
+                                  </td>
+                                </tr>
+                                <tr style="height: 60px; border-bottom: 1px solid #e5e7eb;">
+                                  <td style="width: 24%; height: 60px; border-bottom: 1px solid #e5e7eb;"><strong>1x
+                                      NVIDIA A6000</strong></td>
+                                  <td style="width: 16%; height: 60px; border-bottom: 1px solid #e5e7eb;">48 GB</td>
+                                  <td style="width: 10%; height: 60px; border-bottom: 1px solid #e5e7eb;">14</td>
+                                  <td style="width: 14%; height: 60px; border-bottom: 1px solid #e5e7eb;">100 GiB</td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">200 GiB SSD
+                                  </td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">$0.80 / hr
+                                  </td>
+                                </tr>
+                                <tr style="height: 60px; border-bottom: 1px solid #ffffff;">
+                                  <td style="width: 24%; height: 60px; border-bottom: 1px solid #e5e7eb;"><strong>8x
+                                      NVIDIA Tesla V100</strong></td>
+                                  <td style="width: 16%; height: 60px; border-bottom: 1px solid #e5e7eb;">16 GB</td>
+                                  <td style="width: 10%; height: 60px; border-bottom: 1px solid #e5e7eb;">92</td>
+                                  <td style="width: 14%; height: 60px; border-bottom: 1px solid #e5e7eb;">448 GiB</td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">5.9 TiB SSD
+                                  </td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">$4.40 / hr
+                                  </td>
+                                </tr>
+                                <tr style="height: 60px; border-bottom: 1px solid #e5e7eb;">
+                                  <td style="width: 24%; height: 60px; border-bottom: 1px solid #e5e7eb;"><strong>1x
+                                      NVIDIA Quadro RTX 6000</strong></td>
+                                  <td style="width: 16%; height: 60px; border-bottom: 1px solid #e5e7eb;">24 GB</td>
+                                  <td style="width: 10%; height: 60px; border-bottom: 1px solid #e5e7eb;">14</td>
+                                  <td style="width: 14%; height: 60px; border-bottom: 1px solid #e5e7eb;">46 GiB</td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">512 GiB SSD
+                                  </td>
+                                  <td style="width: 18%; height: 60px; border-bottom: 1px solid #e5e7eb;">$0.50 / hr
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-47 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_widget_1661799328980"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          <div class="button-wrapper  ">
+
+
+
+                            <a class="button solid-btn" href="sign-up.html">
+                              Sign up for free
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+
+                          </div>
+
+
+
+
+                          <script>
+
+                          </script>
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+              </div><!--end row-->
+            </div><!--end row-wrapper -->
+
+            <div
+              class="row-fluid-wrapper row-depth-1 row-number-48 dnd-section dnd_area-row-19-force-full-width-section dnd_area-row-19-padding">
+              <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0"
+                  data-w="12">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-49 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_module_17025673074802"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                          <div class="divider-container">
+                            <div class="divider-text">RESERVED CLOUD</div>
+                            <div class="divider-line"></div>
+                          </div>
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+              </div><!--end row-->
+            </div><!--end row-wrapper -->
+
+            <div class="row-fluid-wrapper row-depth-1 row-number-50 dnd_area-row-20-padding dnd-section">
+              <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0"
+                  data-w="12">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-51 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_module_17025674927347"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                          <style>
+
+
+
+                          </style>
+
+
+
+
+                          <div style="position:relative;">
+                            <div style="" class="text-block left-text  ">
+
+                              <div class="text-col  animate__animated animate__fadeIn animate__delay-1s"
+                                style="text-align:center;">
+
+                                <span class="colored-mustache purple"></span>
+
+                                <h2 class="hero-headline " ">
+                                    <span " class="gradient-text">Lambda Reserved
+                                  Cloud</span>
+                                </h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+              </div><!--end row-->
+            </div><!--end row-wrapper -->
+
+            <div class="row-fluid-wrapper row-depth-1 row-number-52 dnd-section dnd_area-row-21-padding">
+              <div class="row-fluid ">
+                <div class="span4 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0"
+                  data-w="4">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-53 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_module_17032754295644"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text"
+                          style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span
+                            id="hs_cos_wrapper_module_17032754295644_"
+                            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style=""
+                            data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
+                            <h3>Guaranteed access to clusters in the cloud</h3>
+                            <p>GPUs, storage, and networking designed for AI workloads.</p>
+                          </span></div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+                <div class="span4 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="4"
+                  data-w="4">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-54 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_module_17032754295646"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text"
+                          style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span
+                            id="hs_cos_wrapper_module_17032754295646_"
+                            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style=""
+                            data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
+                            <h3>One, two &amp; three year contracts</h3>
+                            <p>Flexible contract lengths starting at 1 year.</p>
+                          </span></div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+                <div class="span4 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="8"
+                  data-w="4">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-55 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_module_17032754295648"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text"
+                          style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span
+                            id="hs_cos_wrapper_module_17032754295648_"
+                            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style=""
+                            data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
+                            <h3>Payment options from 0-100% down</h3>
+                            <p>Control your $/GPU/hr price.</p>
+                          </span></div>
+
+                      </div><!--end widget-span -->
+                    </div><!--end row-->
+                  </div><!--end row-wrapper -->
+
+                </div><!--end widget-span -->
+              </div><!--end row-->
+            </div><!--end row-wrapper -->
+
+            <div class="row-fluid-wrapper row-depth-1 row-number-56 dnd-section dnd_area-row-22-padding">
+              <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0"
+                  data-w="12">
+
+                  <div class="row-fluid-wrapper row-depth-1 row-number-57 dnd-row">
+                    <div class="row-fluid ">
+                      <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                        data-widget-type="custom_widget" data-x="0" data-w="12">
+                        <div id="hs_cos_wrapper_module_17029255560474"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                          <style>
+
+
+
+                          </style>
+
+
+
+
+                          <div style="position:relative;">
+                            <div style="" class="text-block left-text  ">
+
+                              <div class="text-col  animate__animated animate__fadeIn animate__delay-1s"
+                                style="text-align:center;">
+
+                                <span class="colored-mustache purple"></span>
+
+                                <h2 class="hero-headline " ">
+
+                                  </h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  <div class=" button-wrapper ">
+
+                                    <a class=" button solid-btn" href="#">
+                                  Reserve now
+                                  </a>
+
+
+
+
+
+
+
+
+
+                              </div>
+
+
+
+
+
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div><!--end widget-span -->
+                  </div><!--end row-->
+                </div><!--end row-wrapper -->
+
+              </div><!--end widget-span -->
+            </div><!--end row-->
+          </div><!--end row-wrapper -->
+
+          <div
+            class="row-fluid-wrapper row-depth-1 row-number-58 dnd_area-row-23-hidden dnd-section dnd_area-row-23-padding">
+            <div class="row-fluid ">
+              <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0"
+                data-w="12">
+
+                <div class="row-fluid-wrapper row-depth-1 row-number-59 dnd-row">
+                  <div class="row-fluid ">
+                    <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                      data-widget-type="custom_widget" data-x="0" data-w="12">
+                      <div id="hs_cos_wrapper_module_16842562424045"
+                        class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                        data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                        <style>
+
+
+
+                        </style>
+
+
+
+
+                        <div style="position:relative;">
+                          <div style="align-items:center;" class="text-block   right-text">
+
+                            <div class="text-col  animate__animated animate__fadeIn animate__delay-1s"
+                              style="text-align:left;">
+
+                              <span class="colored-mustache purple"></span>
+
+                              <h2 class="hero-headline heading3" ">
+                                    <span " class="gradient-text">Reserved Cloud
+                                pricing</span>
+                              </h2>
+
+
+
+
+                              <h3>The best prices and value for GPU cloud clusters in the industry</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div><!--end widget-span -->
+                  </div><!--end row-->
+                </div><!--end row-wrapper -->
+
+                <div class="row-fluid-wrapper row-depth-1 row-number-60 dnd-row">
+                  <div class="row-fluid ">
+                    <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                      data-widget-type="custom_widget" data-x="0" data-w="12">
+                      <div id="hs_cos_wrapper_module_16842562424046"
+                        class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                        data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+                        <div class="white-table">
+                          <div data-hs-responsive-table="true"
+                            style="border: none; overflow-x: auto; max-width: 100%; width: 100%; font-size: 14px;">
+                            <table style="width: 100%; border: none;">
+                              <thead style="border-bottom: 1px solid #000000;">
+                                <tr style="height: 110px;">
+                                  <th
+                                    style="background-color: #ffffff; text-align: left; height: 110px; border-bottom: 1px solid #e5e7eb; width: 8%;"
+                                    scope="col">�&nbsp;</th>
+                                  <th
+                                    style="background-color: #ffffff; text-align: left; height: 110px; border-bottom: 1px solid #e5e7eb; width: 11%; vertical-align: middle;"
+                                    scope="col"><span style="color: #6b7280; font-size: 12px;">Instance type</span>
+                                  </th>
+                                  <th
+                                    style="background-color: #ffffff; text-align: left; border-bottom: 1px solid #e5e7eb; width: 8%; vertical-align: middle; padding: 4px; height: 110px;"
+                                    scope="col"><span style="color: #6b7280; font-size: 12px;">GPU</span></th>
+                                  <th
+                                    style="background-color: #ffffff; text-align: left; height: 110px; border-bottom: 1px solid #e5e7eb; width: 8%; vertical-align: middle;"
+                                    scope="col"><span style="color: #6b7280; font-size: 12px;">GPU Memory</span>
+                                  </th>
+                                  <th
+                                    style="background-color: #ffffff; text-align: left; border-bottom: 1px solid #e5e7eb; width: 5%; vertical-align: middle; padding: 4px; height: 110px;"
+                                    scope="col"><span style="color: #6b7280; font-size: 12px;">vCPUs</span></th>
+                                  <th
+                                    style="background-color: #ffffff; text-align: left; border-bottom: 1px solid #e5e7eb; width: 14%; vertical-align: middle; padding: 4px; height: 110px;"
+                                    scope="col"><span style="color: #6b7280; font-size: 12px;">Storage</span></th>
+                                  <th
+                                    style="background-color: #ffffff; text-align: left; height: 110px; border-bottom: 1px solid #e5e7eb; width: 16%; vertical-align: middle;"
+                                    scope="col"><span style="color: #6b7280; font-size: 12px;">Network
+                                      Bandwidth</span></th>
+                                  <th
+                                    style="background-color: #ffffff; text-align: left; border-bottom: 1px solid #e5e7eb; width: 14%; padding: 4px; height: 110px; vertical-align: middle;"
+                                    scope="col"><span style="color: #6b7280; font-size: 12px;">Per Hour Price</span>
+                                  </th>
+                                  <th
+                                    style="background-color: #ffffff; text-align: left; border-bottom: 1px solid #e5e7eb; width: 8%; padding: 4px; vertical-align: middle; height: 110px;"
+                                    scope="col"><span style="color: #6b7280; font-size: 12px;">Term</span></th>
+                                  <th
+                                    style="background-color: #ffffff; text-align: left; border-bottom: 1px solid #e5e7eb; width: 8%; padding: 4px; vertical-align: middle; height: 110px;"
+                                    scope="col"><span style="color: #6b7280; font-size: 12px;"># of GPUs</span></th>
+                                </tr>
+                              </thead>
+                              <tbody class="bg-white divide-y divide-solid divide-gray-200">
+                                <tr style="height: 110px; border-bottom: 1px solid #e5e7eb;">
+                                  <td
+                                    style="width: 8%; height: 110px; border-bottom: 1px solid #e5e7eb; vertical-align: middle;">
+                                    <strong>NVIDIA H100</strong>
+                                  </td>
+                                  <td
+                                    style="width: 11%; height: 110px; border-bottom: 1px solid #e5e7eb; vertical-align: middle;">
+                                    8x NVIDIA H100</td>
+                                  <td
+                                    style="width: 8%; border-bottom: 1px solid #e5e7eb; padding: 4px; height: 110px; vertical-align: middle;">
+                                    H100 SXM</td>
+                                  <td
+                                    style="width: 8%; height: 110px; border-bottom: 1px solid #e5e7eb; vertical-align: middle;">
+                                    80 GB</td>
+                                  <td
+                                    style="width: 5%; border-bottom: 1px solid #e5e7eb; padding: 4px; height: 110px; vertical-align: middle;">
+                                    224</td>
+                                  <td
+                                    style="width: 14%; border-bottom: 1px solid #e5e7eb; padding: 4px; height: 110px; vertical-align: middle;">
+                                    <span>30 TB local per 8x H100</span><span></span>
+                                  </td>
+                                  <td
+                                    style="width: 16%; height: 110px; border-bottom: 1px solid #e5e7eb; vertical-align: middle;">
+                                    <span>3200 Gbps per 8x H100</span>
+                                  </td>
+                                  <td
+                                    style="width: 14%; border-bottom: 1px solid #e5e7eb; vertical-align: middle; padding: 4px; height: 110px;">
+                                    $1.89/H100/hour</td>
+                                  <td
+                                    style="width: 8%; border-bottom: 1px solid #e5e7eb; vertical-align: middle; padding: 4px; height: 110px;">
+                                    3 years</td>
+                                  <td
+                                    style="width: 8%; border-bottom: 1px solid #e5e7eb; vertical-align: middle; padding: 4px; height: 110px;">
+                                    64 - 32,000</td>
+                                </tr>
+                                <tr style="height: 110px;">
+                                  <td
+                                    style="width: 8%; height: 110px; border-bottom: 1px solid #e5e7eb; vertical-align: middle;">
+                                    <strong>NVIDIA H200</strong>
+                                  </td>
+                                  <td
+                                    style="width: 11%; height: 110px; border-bottom: 1px solid #e5e7eb; vertical-align: middle;">
+                                    8x NVIDIA H200</td>
+                                  <td
+                                    style="width: 8%; border-bottom: 1px solid #e5e7eb; padding: 4px; height: 110px; vertical-align: middle;">
+                                    H200 SXM</td>
+                                  <td
+                                    style="width: 8%; height: 110px; border-bottom: 1px solid #e5e7eb; vertical-align: middle;">
+                                    141 GB</td>
+                                  <td
+                                    style="width: 5%; border-bottom: 1px solid #e5e7eb; padding: 4px; height: 110px; vertical-align: middle;">
+                                    224</td>
+                                  <td
+                                    style="width: 14%; border-bottom: 1px solid #e5e7eb; padding: 4px; height: 110px; vertical-align: middle;">
+                                    <span>30 TB local per 8x H200</span><span></span>
+                                  </td>
+                                  <td
+                                    style="width: 16%; height: 110px; border-bottom: 1px solid #e5e7eb; vertical-align: middle;">
+                                    <span>3200 Gbps per 8x H200</span>
+                                  </td>
+                                  <td
+                                    style="width: 14%; border-bottom: 1px solid #e5e7eb; vertical-align: middle; padding: 4px; height: 110px;">
+                                    Contact Sales</td>
+                                  <td
+                                    style="width: 8%; border-bottom: 1px solid #e5e7eb; vertical-align: middle; padding: 4px; height: 110px;">
+                                    3 years</td>
+                                  <td
+                                    style="width: 8%; border-bottom: 1px solid #e5e7eb; vertical-align: middle; padding: 4px; height: 110px;">
+                                    64 - 32,000</td>
+                                </tr>
+                                <tr style="height: 110px;">
+                                  <td
+                                    style="width: 8%; height: 110px; border-bottom: 1px solid #e5e7eb; vertical-align: middle;">
+                                    <strong>NVIDIA GH200</strong>
+                                  </td>
+                                  <td
+                                    style="width: 11%; height: 110px; border-bottom: 1px solid #e5e7eb; vertical-align: middle;">
+                                    1x NVIDIA GH200</td>
+                                  <td
+                                    style="width: 8%; border-bottom: 1px solid #e5e7eb; padding: 4px; vertical-align: middle; height: 110px;">
+                                    GH200 Superchip</td>
+                                  <td
+                                    style="width: 8%; height: 110px; border-bottom: 1px solid #e5e7eb; vertical-align: middle;">
+                                    96 GB</td>
+                                  <td
+                                    style="width: 5%; border-bottom: 1px solid #e5e7eb; padding: 4px; vertical-align: middle; height: 110px;">
+                                    72</td>
+                                  <td
+                                    style="width: 14%; border-bottom: 1px solid #e5e7eb; padding: 4px; vertical-align: middle; height: 110px;">
+                                    30 TB local per GH200</td>
+                                  <td
+                                    style="width: 16%; height: 110px; border-bottom: 1px solid #e5e7eb; vertical-align: middle;">
+                                    400 Gbps per GH200</td>
+                                  <td
+                                    style="width: 14%; border-bottom: 1px solid #e5e7eb; vertical-align: middle; padding: 4px; height: 110px;">
+                                    $5.99 /GH200/hour</td>
+                                  <td
+                                    style="width: 8%; border-bottom: 1px solid #e5e7eb; vertical-align: middle; padding: 4px; height: 110px;">
+                                    3-12 months</td>
+                                  <td
+                                    style="width: 8%; border-bottom: 1px solid #e5e7eb; vertical-align: middle; padding: 4px; height: 110px;">
+                                    10 or 20</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div><!--end widget-span -->
+                  </div><!--end row-->
+                </div><!--end row-wrapper -->
+
+                <div class="row-fluid-wrapper row-depth-1 row-number-61 dnd-row">
+                  <div class="row-fluid ">
+                    <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
+                      data-widget-type="custom_widget" data-x="0" data-w="12">
+                      <div id="hs_cos_wrapper_module_1661799372317"
+                        class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                        data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="button-wrapper  ">
+
+
+
+                          <a class="button solid-btn" href="#">
+                            Learn more
+                          </a>
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+                        <script>
+
+                        </script>
+                      </div>
+
+                    </div><!--end widget-span -->
+                  </div><!--end row-->
+                </div><!--end row-wrapper -->
+
+              </div><!--end widget-span -->
+            </div><!--end row-->
+          </div><!--end row-wrapper -->
+
+        </div><!--end widget-span -->
+      </div>
+  </div>
+  </div>
+
+  </main>
+
+
+  <div data-global-resource-path="LambdaLabs/templates/partials/footer-update.html">
+    <style>
+      .footer .row-fluid-wrapper {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .footer .menu__header {
+        font-weight: 900;
+        margin: 0 0 0.25em 0;
+      }
+
+      .footer .menu__link {
+        display: block;
+      }
+
+      .footer .menu__legal {
+        display: inline;
+      }
+
+      @media (max-width: 768px) {
+
+        .footer .menu__header {
+          margin: 1rem 0 0.25rem 0;
+        }
+
+        .footer .menu__legal {
+          display: inline;
+        }
+
+        .footer .footer-social-wrapper {
+          margin: 1rem auto;
+        }
+      }
+    </style>
+
+    <footer class="footer" style="background-color:#FAFAFA; padding: 4rem 2rem;">
+      <div class="row-fluid-wrapper">
+        <div class="row-fluid">
+          <div class="span4">
+            <a href="index.html">
+              <h1 class="fonts" style="font-size: 20px;margin: 0px;">
+                Gpu10xCloud
+              </h1>
+            </a>
+          </div>
+
+
+
+          <div class="span2">
+            <p class="menu__header menu__link">Resources </p>
+
+            <a class="menu__link">
+              GPU Benchmarks
+            </a>
+
+            <a class="menu__link">
+              Blog
+            </a>
+
+            <a class="menu__link" href="#">
+              Lambda Stack
+            </a>
+
+            <a class="menu__link">
+              Documentation
+            </a>
+
+            <a class="menu__link">
+              Forum
+            </a>
+
+            <a class="menu__link">
+              Research
+            </a>
+
+          </div>
+
+          <div class="span2">
+            <p class="menu__header menu__link">Company </p>
+
+            <a class="menu__link">
+              About
+            </a>
+
+            <a class="menu__link">
+              Careers
+            </a>
+
+            <a class="menu__link">
+              Professional Services
+            </a>
+
+            <a class="menu__link">
+              Partners
+            </a>
+
+          </div>
+
+          <div class="span2">
+            <p class="menu__header menu__link">Support </p>
+
+            <a class="menu__link">
+              Technical Support
+            </a>
+
+            <a class="menu__link">
+              Partner Portal
+            </a>
+
+          </div>
+
+          <div class="span2">
+            <p class="menu__header menu__link">Contact </p>
+
+            <a class="menu__link">
+              Contact Us
+            </a>
+
+            <a class="menu__link" href="tel:%201%20(866)%20711-2025">
+              P. 1 (866) 711-2025
+            </a>
+
+          </div>
+
+
+        </div>
+      </div>
+      <div class="row-fluid-wrapper">
+        <div class="row-fluid">
+          <hr style="width:100%; margin: 2rem 0; border-top: solid 1px #dcdcdc; border-bottom: solid 1px #FFFFFF;">
+        </div>
+      </div>
+      <div class="row-fluid-wrapper">
+        <div class="row-fluid">
+          <div class="span4">
+            <span id="hs_cos_wrapper_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text"
+              style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
+              <div><span class="menu__link">© 2024 All rights reserved.</span></div>
+            </span>
+          </div>
+          <div class="span4">
+
+
+            <a class="menu__link menu__legal">
+              Terms of Service
+            </a><span>�&nbsp;�&nbsp;�&nbsp;</span>
+
+            <a class="menu__link menu__legal">
+              Privacy Policy
+            </a><span>�&nbsp;�&nbsp;�&nbsp;</span>
+
+          </div>
+          <div class="span4">
+            <div class="footer-social-wrapper">
+              <div id="hs_cos_wrapper_social_icons"
+                class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+                data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+                <div style="">
+                  <div class="social-links">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <a class="social-links__link" href="https://twitter.com/lambdaapi" target="_blank" rel="noopener">
+                      <span id="hs_cos_wrapper_social_icons_"
+                        class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon social-links__icon"
+                        style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-labelledby="twitter1"
+                          role="img">
+                          <title id="twitter1">Follow us on Twitter</title>
+                          <g id="twitter1_layer">
+                            <path
+                              d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                            </path>
+                          </g>
+                        </svg></span>
+                    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <a class="social-links__link" href="https://www.linkedin.com/company/lambda-labs/" target="_blank"
+                      rel="noopener">
+                      <span id="hs_cos_wrapper_social_icons__2"
+                        class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon social-links__icon"
+                        style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-labelledby="linkedin-in2"
+                          role="img">
+                          <title id="linkedin-in2">Follow us on LinkedIn</title>
+                          <g id="linkedin-in2_layer">
+                            <path
+                              d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z">
+                            </path>
+                          </g>
+                        </svg></span>
+                    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <a class="social-links__link" href="https://www.youtube.com/c/LambdaLabs/videos" target="_blank"
+                      rel="noopener">
+                      <span id="hs_cos_wrapper_social_icons__3"
+                        class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon social-links__icon"
+                        style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" aria-labelledby="youtube3"
+                          role="img">
+                          <title id="youtube3">Lambda's YouTube Channel</title>
+                          <g id="youtube3_layer">
+                            <path
+                              d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                            </path>
+                          </g>
+                        </svg></span>
+                    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <a class="social-links__link" href="https://lambdalabs.com/blog/rss.xml?hsLang=en" target="_blank"
+                      rel="noopener">
+                      <span id="hs_cos_wrapper_social_icons__4"
+                        class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon social-links__icon"
+                        style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-labelledby="rss4" role="img">
+                          <title id="rss4">Lambda's Blog RSS Feed</title>
+                          <g id="rss4_layer">
+                            <path
+                              d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z">
+                            </path>
+                          </g>
+                        </svg></span>
+                    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <a class="social-links__link" href="https://github.com/lambdal" target="_blank" rel="noopener">
+                      <span id="hs_cos_wrapper_social_icons__5"
+                        class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon social-links__icon"
+                        style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" aria-labelledby="github5" role="img">
+                          <title id="github5">Lambdas' GitHub</title>
+                          <g id="github5_layer">
+                            <path
+                              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                            </path>
+                          </g>
+                        </svg></span>
+                    </a>
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="hs_cos_wrapper_footer_menu_stub" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
+      style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+
+
+
+
+
+      <nav class="menu menu--desktop" aria-label="Main menu">
+        <ul class="menu__wrapper no-list">
+
+
+
+
+
+
+
+
+
+
+        </ul>
+      </nav>
+
+
+
+      <nav class="menu menu--mobile" aria-label="Main menu">
+        <ul class="menu__wrapper no-list">
+
+
+
+
+
+
+
+
+
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  </div>
+
+
+
+
+  <!-- HubSpot performance collection script -->
+  <script defer="" src="js/embed.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/form-update.min.js"></script>
+  <script>
+    var hsVars = hsVars || {}; hsVars['language'] = 'en';
+  </script>
+
+  <script src="js/project.js"></script>
+  <script src="js/module_81423666946_website_header.min.js"></script>
+  <script src="js/subnav.min.js"></script>
+  <script src="js/module_81424021549_footer_menu.min.js"></script>
+
+  <!-- Start of HubSpot Analytics Code -->
+  <script type="text/javascript">
+    var _hsq = _hsq || [];
+    _hsq.push(["setContentType", "standard-page"]);
+    _hsq.push(["setCanonicalUrl", "https:\/\/lambdalabs.com\/service\/gpu-cloud"]);
+    _hsq.push(["setPageId", "83011386037"]);
+    _hsq.push(["setContentMetadata", {
+      "contentPageId": 83011386037,
+      "legacyPageId": "83011386037",
+      "contentFolderId": null,
+      "contentGroupId": null,
+      "abTestId": null,
+      "languageVariantId": 83011386037,
+      "languageCode": "en",
+
+    }]);
+  </script>
+
+  <script type="text/javascript" id="hs-script-loader" async="" defer="" src="js/21998649.js"></script>
+  <!-- End of HubSpot Analytics Code -->
+
+
+  <script type="text/javascript">
+    var hsVars = {
+      render_id: "248482d2-4f2b-4a64-bea7-e598ed8c2696",
+      ticks: 1708440435186,
+      page_id: 83011386037,
+
+      content_group_id: 0,
+      portal_id: 21998649,
+      app_hs_base_url: "https://app.hubspot.com",
+      cp_hs_base_url: "https://cp.hubspot.com",
+      language: "en",
+      analytics_page_type: "standard-page",
+      analytics_page_id: "83011386037",
+      category_id: 1,
+      folder_id: 0,
+      is_hubspot_user: false
+    }
+  </script>
+
+
+  <script defer="" src="js/index.js"></script>
+
+  <script async="" type="text/javascript" src="https://widget.intercom.io/widget/ahj4606e"></script>
+
+  <script>
+    window.intercomSettings = {
+      api_base: "https://api-iam.intercom.io",
+      custom_launcher_selector: '#intercompopup',
+      app_id: "ahj4606e"
+    };
+  </script>
+
+  <script type="text/javascript">
+    window.intercomSettings = window.intercomSettings || {};
+    window.intercomSettings.app_id = 'ahj4606e';
+    window.intercomSettings.hide_default_launcher = false;
+    (function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', w.intercomSettings); } else { var d = document; var i = function () { i.c(arguments); }; i.q = []; i.c = function (args) { i.q.push(args); }; w.Intercom = i; var l = function () { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/' + w.intercomSettings.app_id; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }; if (document.readyState === 'complete') { l(); } else if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })();
+  </script>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZ5JKG2" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
+
+
+</body>
+
+</html>
