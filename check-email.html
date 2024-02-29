@@ -1716,105 +1716,6 @@
 
 <!--    LOGIN CONTROLLER JS -->
   <script src="js/login-controller.js"></script>
- <!--    FOR LOGIN FUNCTIONALITY -->
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-    import {
-      getAuth,
-      createUserWithEmailAndPassword,
-      signInWithEmailAndPassword,
-    } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js";
-
-    // Your web app's Firebase configuration
-  const firebaseConfig = {
-  apiKey: "AIzaSyBv8p9OrG0W7POVk3PA9WVaf_n3blQKVNI",
-  authDomain: "lambda-43530.firebaseapp.com",
-  projectId: "lambda-43530",
-  storageBucket: "lambda-43530.appspot.com",
-  messagingSenderId: "839355113182",
-  appId: "1:839355113182:web:39a62d6dacc5aa4690ec4f"
-};
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth();
-
-    // Login function
-    function logIn(email, password) {
-        signInWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-          // Signed in
-          const user = userCredential.user;
-          //
-          alert("User Logged In successfully");
-        })
-        .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-         alert(errorMessage);
-          // ..
-        });
-    }
-
-
-    const signinButton  = document.getElementById("signin");
-
-
-    signinButton.addEventListener("click", () => {
-      const email=document.getElementById("email-input").value;
-      const password=document.getElementById("password-input").value;
-
-    
-      
-      
-      if (validateForm(email, password)) {
-        logIn(email, password);
-        document.getElementById("email-input").value="";
-     document.getElementById("password-input").value="";
-     
-        
-      }
-      console.log("clicked");
-    });
-function validateForm(email, password) {
-  // Validate email, password, and account type
-  if (!validateEmail(email) || !validatePassword(password) ) {
-    // alert("Invalid email, password, or account type");
-    return false;
-  }
-
-
-
-  // Form is valid
-  return true;
-}
-
-function validatePassword(password) {
-  // Password must be at least 10 characters long
-  if (password.length < 10) {
-    console.log("Password must be at least 10 characters long", password);
-    return false;
-  }
-
-  // Password is valid
-  return true;
-}
-
-function validateEmail(email) {
-  // Email must be valid
-  if (!email.includes("@")) {
-    console.log("Email must be valid", email);
-    return false;
-  }
-
-  // Email is valid
-  return true;
-}
-
-</script>
 
 
 
@@ -1861,34 +1762,20 @@ function validateEmail(email) {
             </h1>
           </div>
           <section id="login-container">
-            <h1 class="header-1">Sign in to your account</h1>
-            <form class="stretch block form-with-dynamic-labels" ng-class="{disabled: isProcessingLogIn}">
-              <div class="input-container">
-                <input id="email-input" type="text" name="email" autocomplete="email" ng-model="credentials.identifier"
-                  class="input-with-dynamic-label" ng-class="{empty: credentials.identifier.length === 0,
-                          errors: false}">
-                <label for="email-input" class="shrinking-label">Email</label>
-              </div>
-              <div class="input-container">
-                <input id="password-input" type="password" name="password" autocomplete="current-password"
-                  ng-model="credentials.secret" class="input-with-dynamic-label" ng-class="{empty: credentials.secret.length === 0,
-                          errors: false}">
-                <label for="password-input" class="shrinking-label">Password</label>
-              </div>
-
-              <button id="signin" class="external cta blue" ng-class="{disabled: isProcessingLogIn}">Sign
-                in</button>
-            </form>
-            <div id="extra-actions-container">
-              <div class="small-cta-container">
-                <span>Forgot your password?</span>
-                <a href="reset-password.html">Reset your password</a>
-              </div>
-              <div class="small-cta-container">
-                <span>Don't have an account?</span>
-                <a href="sign-up.html">Sign up</a>
-              </div>
+            <h1 class="header-1">Check your Email</h1>
+           <div class="small-cta-container"> <span >We've sent you an email with a link to reset your password. If you don't receive an email within a few minutes, please check your spam folder.</span>
+            
             </div>
+           
+            <a href="sign-in.html">
+         <button  class="external cta blue" ng-class="{disabled: isProcessingLogIn}">
+           
+            Sign
+                in to your Account
+            
+                </button>
+                </a>
+            
           </section>
         </div>
       </section>
